@@ -1,0 +1,2728 @@
+[
+  {
+    "id": "ite8-expanded-001",
+    "module": 1,
+    "question": "A replacement processor fits the same general size as the old CPU. What must still be verified before installation?",
+    "options": [
+      "Only the processor's brand and physical dimensions",
+      "The motherboard socket, chipset and firmware support the exact CPU",
+      "Only the CPU's advertised clock speed",
+      "Only that the power supply has spare connectors"
+    ],
+    "answer": 1,
+    "explanation": "Physical appearance does not establish compatibility. The socket, board support list and required firmware must support that CPU model.",
+    "lesson": {
+      "title": "CPU compatibility",
+      "meaning": "A socket is the processor's physical and electrical interface; board support also depends on its design and firmware.",
+      "example": "A board accepts a CPU only after a supported firmware update. Check the vendor list before purchasing.",
+      "remember": "Check the exact CPU support list, not just the brand."
+    }
+  },
+  {
+    "id": "ite8-expanded-002",
+    "module": 1,
+    "question": "Which memory is designed to keep frequently used instructions and data close to the CPU for fast access?",
+    "options": [
+      "CPU cache",
+      "System RAM used for all active applications",
+      "Nonvolatile SSD storage used for saved files",
+      "Virtual memory pages stored on a drive"
+    ],
+    "answer": 0,
+    "explanation": "Cache reduces the delay of obtaining frequently needed information. It is small, fast memory associated with the processor, not long-term file storage.",
+    "lesson": {
+      "title": "CPU cache",
+      "meaning": "Think of cache as a small set of frequently used items kept within immediate reach.",
+      "example": "A processor accesses cached data instead of fetching every item from slower main memory.",
+      "remember": "Cache = small and fast; RAM = larger working memory; storage = persistent files."
+    }
+  },
+  {
+    "id": "ite8-expanded-003",
+    "module": 1,
+    "question": "What is a principal purpose of error-correcting code (ECC) memory in a supported system?",
+    "options": [
+      "Encrypt all stored files automatically",
+      "Replace the need for redundant storage",
+      "Make unsupported RAM work in any motherboard",
+      "Detect and correct supported memory errors"
+    ],
+    "answer": 3,
+    "explanation": "ECC adds information that enables supported memory-error detection and correction. The platform must support ECC; it is not a substitute for backup.",
+    "lesson": {
+      "title": "ECC memory",
+      "meaning": "ECC improves memory reliability by handling certain bit errors.",
+      "example": "A supported server platform uses ECC to reduce the effect of correctable memory faults.",
+      "remember": "ECC concerns memory errors, not permanent file storage."
+    }
+  },
+  {
+    "id": "ite8-expanded-004",
+    "module": 1,
+    "question": "Two laptops have USB-C ports. Why might only one support an external display through that port?",
+    "options": [
+      "All USB-C ports must support identical optional features",
+      "A cable adapter always adds missing display support",
+      "Connector shape does not guarantee the same protocols or capabilities",
+      "The operating system alone guarantees video capability"
+    ],
+    "answer": 2,
+    "explanation": "USB-C describes the connector. Video output and charging capabilities depend on the implementation and supported modes.",
+    "lesson": {
+      "title": "USB-C capabilities",
+      "meaning": "A matching plug shape does not mean every optional function is present.",
+      "example": "Check the laptop and dock specifications for supported display output before buying a cable.",
+      "remember": "Connector type and supported features are separate checks."
+    }
+  },
+  {
+    "id": "ite8-expanded-005",
+    "module": 1,
+    "question": "Which slot is commonly used for a desktop's discrete graphics card?",
+    "options": [
+      "A DIMM slot with enough physical clearance",
+      "A compatible PCI Express x16 slot",
+      "A SATA connector configured in firmware",
+      "The CPU socket used for processor installation"
+    ],
+    "answer": 1,
+    "explanation": "A discrete graphics card commonly connects through PCIe. Memory modules and processors use different sockets and cannot substitute for the expansion interface.",
+    "lesson": {
+      "title": "Expansion slots",
+      "meaning": "PCIe expansion lets compatible devices communicate with the system.",
+      "example": "A GPU is fitted into the appropriate PCIe slot, with any required additional power connected.",
+      "remember": "GPU expansion commonly uses PCIe; RAM goes in DIMM slots."
+    }
+  },
+  {
+    "id": "ite8-expanded-006",
+    "module": 1,
+    "question": "Why should a technician not force a DDR4 module into a DDR5 motherboard memory slot?",
+    "options": [
+      "The generations have different keying and electrical requirements",
+      "The modules differ only in advertised speed",
+      "The operating system can adapt the slot electrically",
+      "The notch can be removed without affecting compatibility"
+    ],
+    "answer": 0,
+    "explanation": "Different DDR generations are not interchangeable merely because both are memory. Mechanical keying helps prevent incompatible installation.",
+    "lesson": {
+      "title": "DDR compatibility",
+      "meaning": "The notch is a compatibility feature, not an obstacle to overcome.",
+      "example": "A module's notch does not align. Stop and verify the supported generation.",
+      "remember": "Never force memory; match the supported DDR generation."
+    }
+  },
+  {
+    "id": "ite8-expanded-007",
+    "module": 1,
+    "question": "A compatible motherboard has four RAM slots. What is the best source for choosing the slots for a two-module dual-channel configuration?",
+    "options": [
+      "Always the two slots closest to the CPU on every board",
+      "Always two adjacent slots regardless of channel labels",
+      "Any two slots necessarily enable the intended mode",
+      "The motherboard manual's recommended population order"
+    ],
+    "answer": 3,
+    "explanation": "Recommended slot placement depends on the board design. The manual identifies the correct pair for the intended configuration.",
+    "lesson": {
+      "title": "Memory channels",
+      "meaning": "Memory channels depend on the controller and correct module placement.",
+      "example": "The manual recommends A2 and B2; use that pair rather than assuming adjacent slots are correct.",
+      "remember": "Use the board's population diagram; slot layout is not universal."
+    }
+  },
+  {
+    "id": "ite8-expanded-008",
+    "module": 1,
+    "question": "When selecting a PSU for a new graphics-card upgrade, what should be considered?",
+    "options": [
+      "Only the graphics card's slot length",
+      "Only the PSU's maximum advertised wattage, ignoring connectors",
+      "System power needs, suitable connectors and the vendor's requirements",
+      "Only the old PSU's age"
+    ],
+    "answer": 2,
+    "explanation": "A PSU must support the full system and provide appropriate connections. A single wattage figure without checking compatibility is insufficient.",
+    "lesson": {
+      "title": "PSU capacity",
+      "meaning": "The power supply is selected for the system it must power.",
+      "example": "A GPU requires dedicated power connectors and higher capacity; check both before upgrading.",
+      "remember": "Capacity, connectors, quality and compatibility all matter."
+    }
+  },
+  {
+    "id": "ite8-expanded-009",
+    "module": 1,
+    "question": "Which part distinguishes a typical mechanical hard drive from an SSD?",
+    "options": [
+      "Nonvolatile storage of user files",
+      "Spinning magnetic platters and moving read/write heads",
+      "A logical partition table",
+      "A controller for storage commands"
+    ],
+    "answer": 1,
+    "explanation": "A mechanical HDD uses moving components to access magnetic storage. SSDs store data electronically without those storage mechanisms.",
+    "lesson": {
+      "title": "Mechanical storage",
+      "meaning": "Mechanical storage moves; solid-state storage does not.",
+      "example": "An HDD makes unusual clicking sounds and read errors appear. Protect data and investigate the drive.",
+      "remember": "HDD = mechanical magnetic storage; SSD = solid-state storage."
+    }
+  },
+  {
+    "id": "ite8-expanded-010",
+    "module": 1,
+    "question": "Where is motherboard firmware normally stored so it remains available without main power?",
+    "options": [
+      "Nonvolatile firmware memory on the motherboard",
+      "Only in volatile RAM refreshed while powered",
+      "Only on the operating-system partition",
+      "Only in the battery itself"
+    ],
+    "answer": 0,
+    "explanation": "Firmware must remain available when the system is off so it can start the machine. Nonvolatile storage retains its contents without normal system power.",
+    "lesson": {
+      "title": "Firmware storage",
+      "meaning": "Startup instructions need persistent storage.",
+      "example": "A PC can enter firmware setup before any operating system is installed.",
+      "remember": "Firmware persistence is different from RAM's temporary working data."
+    }
+  },
+  {
+    "id": "ite8-expanded-011",
+    "module": 2,
+    "question": "What should be done if a CPU does not seat easily in its supported socket?",
+    "options": [
+      "Increase pressure until the retention bracket closes",
+      "Rotate the processor according to its printed brand text only",
+      "Treat every CPU from that vendor as socket-compatible",
+      "Check the orientation and alignment marks without forcing it"
+    ],
+    "answer": 3,
+    "explanation": "Correct orientation is essential. Forcing a CPU can damage pins or contacts even when the model is otherwise compatible.",
+    "lesson": {
+      "title": "CPU alignment",
+      "meaning": "Alignment marks show how a processor must be positioned.",
+      "example": "The triangle markers do not align; reposition the CPU before closing the retention mechanism.",
+      "remember": "Match the orientation and follow the socket instructions."
+    }
+  },
+  {
+    "id": "ite8-expanded-012",
+    "module": 2,
+    "question": "A new CPU cooler has a protective film over its contact surface. What must happen before fitting it?",
+    "options": [
+      "Leave the film to prevent electrical contact",
+      "Compensate for the film with extra thermal paste",
+      "Remove the film according to the cooler instructions",
+      "Increase fan speed instead of removing the film"
+    ],
+    "answer": 2,
+    "explanation": "Protective film is packaging, not a thermal interface. Leaving it in place can obstruct heat transfer.",
+    "lesson": {
+      "title": "Cooler preparation",
+      "meaning": "The cooler needs the intended contact with the CPU through the specified thermal interface.",
+      "example": "A new build overheats immediately; inspection finds protective film under the cooler.",
+      "remember": "Check packaging film, seating and thermal-compound instructions."
+    }
+  },
+  {
+    "id": "ite8-expanded-013",
+    "module": 2,
+    "question": "For a case using a separate snap-in motherboard I/O shield, when is it normally fitted?",
+    "options": [
+      "After the motherboard is fully secured over it",
+      "Before mounting the motherboard in the case",
+      "After all rear cables are attached",
+      "Only after the operating system is installed"
+    ],
+    "answer": 1,
+    "explanation": "A separate shield fits the case opening behind the board's ports. Installing it first avoids having to remove the board again; integrated shields differ.",
+    "lesson": {
+      "title": "Rear I/O shield",
+      "meaning": "The I/O shield frames the rear connectors; it is not an internal electrical cable.",
+      "example": "Check whether the board uses an integrated shield or a separate piece before mounting.",
+      "remember": "Follow the case/board design; a separate shield normally goes in first."
+    }
+  },
+  {
+    "id": "ite8-expanded-014",
+    "module": 2,
+    "question": "After assembly, the case power button does nothing. The PSU and main power connections check out. What should be checked next?",
+    "options": [
+      "The power-switch lead on the correct front-panel header pins",
+      "The storage drive's partition scheme",
+      "The monitor's selected video input",
+      "The operating system's startup-app list"
+    ],
+    "answer": 0,
+    "explanation": "The case switch signals the motherboard through its front-panel connection. Incorrect placement can prevent the button from triggering startup.",
+    "lesson": {
+      "title": "Front-panel wiring",
+      "meaning": "The front-panel switch is a control connection, distinct from the PSU's main power plug.",
+      "example": "Use the motherboard pinout to verify the case power-switch connector.",
+      "remember": "Use the header diagram; do not guess pin positions."
+    }
+  },
+  {
+    "id": "ite8-expanded-015",
+    "module": 2,
+    "question": "A newly installed GPU has power sockets specified by its manufacturer. What is the appropriate action?",
+    "options": [
+      "Assume the PCIe slot always supplies all required power",
+      "Use any visually similar CPU connector without checking",
+      "Use an unapproved adapter regardless of PSU capability",
+      "Connect the required compatible PSU leads before operation"
+    ],
+    "answer": 3,
+    "explanation": "Some GPUs need power in addition to what the slot provides. Use the specified compatible connectors and follow the hardware instructions.",
+    "lesson": {
+      "title": "Expansion-card power",
+      "meaning": "The PCIe slot and supplementary leads may both contribute power.",
+      "example": "A GPU displays a missing-power warning; check its specified connections.",
+      "remember": "Match the device's required power connectors; never force plugs."
+    }
+  },
+  {
+    "id": "ite8-expanded-016",
+    "module": 2,
+    "question": "A screw falls beneath the motherboard during assembly. What should the technician do before applying power?",
+    "options": [
+      "Leave it if the computer passes one startup test",
+      "Power on first to see whether a short occurs",
+      "Retrieve it and check for other loose conductive parts",
+      "Assume a screw cannot contact exposed conductors"
+    ],
+    "answer": 2,
+    "explanation": "A loose metal object can bridge conductors and cause a short. Remove it safely before powering the system.",
+    "lesson": {
+      "title": "Loose hardware",
+      "meaning": "Conductive debris can turn a physical assembly error into an electrical fault.",
+      "example": "Account for dropped screws before closing and powering a case.",
+      "remember": "No loose conductive hardware inside a powered system."
+    }
+  },
+  {
+    "id": "ite8-expanded-017",
+    "module": 2,
+    "question": "Why should motherboard screws be tightened only as directed rather than excessively?",
+    "options": [
+      "Extra force improves the board's electrical grounding indefinitely",
+      "Excessive force can damage the board or mounting points",
+      "Screw pressure sets the CPU's operating frequency",
+      "The board must bend slightly to ensure connector seating"
+    ],
+    "answer": 1,
+    "explanation": "Mounting should secure the board without unnecessary stress. Overtightening can damage components, threads or the circuit board.",
+    "lesson": {
+      "title": "Correct mounting",
+      "meaning": "Mechanical security does not require excessive force.",
+      "example": "Tighten evenly with the correct tool and follow the manufacturer's guidance.",
+      "remember": "Secure, not forced; avoid stressing the board."
+    }
+  },
+  {
+    "id": "ite8-expanded-018",
+    "module": 2,
+    "question": "A technician replaces one modular PSU with another brand. Which cable practice is safest?",
+    "options": [
+      "Use cables specifically approved for the new PSU model",
+      "Reuse old modular cables whenever the shells fit",
+      "Mix cables according to the number of pins only",
+      "Assume all PSU-side wiring is standardized across models"
+    ],
+    "answer": 0,
+    "explanation": "PSU-side modular pinouts are not universally interchangeable. A fitting connector does not establish electrical compatibility.",
+    "lesson": {
+      "title": "Modular PSU cables",
+      "meaning": "The removable cable's PSU end must match that PSU's wiring.",
+      "example": "Use the new PSU's supplied or explicitly compatible cables rather than assuming old ones are safe.",
+      "remember": "Modular PSU cables are not universally interchangeable."
+    }
+  },
+  {
+    "id": "ite8-expanded-019",
+    "module": 2,
+    "question": "Where should a standard CPU cooler's fan normally connect when the board manual specifies CPU_FAN?",
+    "options": [
+      "The front-panel power-switch pins",
+      "The clear-CMOS jumper",
+      "An unverified header chosen only because it has the same pin count",
+      "The motherboard's designated CPU_FAN header"
+    ],
+    "answer": 3,
+    "explanation": "The designated header powers and monitors the fan according to the board design. Wrong placement can cause monitoring warnings or incorrect control.",
+    "lesson": {
+      "title": "CPU-fan header",
+      "meaning": "Fan headers are functional control and power connections.",
+      "example": "The cooler spins but the firmware reports no CPU fan; verify the instructed header and sensor setup.",
+      "remember": "Use the designated cooler header and the manufacturer's instructions."
+    }
+  },
+  {
+    "id": "ite8-expanded-020",
+    "module": 2,
+    "question": "Which check is appropriate before a newly assembled PC is powered for the first time?",
+    "options": [
+      "Apply power before checking for loose screws",
+      "Assume seated connectors need no inspection",
+      "Verify connections, component seating and clear fan movement",
+      "Install the operating system before verifying cooler mounting"
+    ],
+    "answer": 2,
+    "explanation": "A final physical inspection catches preventable wiring, seating and obstruction problems before power is applied.",
+    "lesson": {
+      "title": "Final assembly check",
+      "meaning": "A short pre-power checklist prevents avoidable faults.",
+      "example": "Check RAM latches, power leads, cooler mounting and loose objects before startup.",
+      "remember": "Inspect before applying power, then test systematically."
+    }
+  },
+  {
+    "id": "ite8-expanded-021",
+    "module": 3,
+    "question": "A PC keeps starting the old installed OS instead of the prepared installer USB. What firmware setting is relevant?",
+    "options": [
+      "The installed OS's startup-app order",
+      "Boot-device selection or order",
+      "The storage volume's display name",
+      "The browser's default download location"
+    ],
+    "answer": 1,
+    "explanation": "Firmware chooses a startup device before the OS runs. Selecting the correct supported media is necessary to launch its installer.",
+    "lesson": {
+      "title": "Boot order",
+      "meaning": "Boot order determines which available startup target is attempted.",
+      "example": "Use the one-time boot menu to choose the installer rather than altering unrelated Windows settings.",
+      "remember": "Boot selection happens before the installed OS loads."
+    }
+  },
+  {
+    "id": "ite8-expanded-022",
+    "module": 3,
+    "question": "Before updating motherboard firmware, which preparation is most important?",
+    "options": [
+      "Verify the exact model, correct firmware and reliable power",
+      "Use a similar board's firmware if the version number is higher",
+      "Perform the update without checking power stability",
+      "Assume the newest file is compatible with every board revision"
+    ],
+    "answer": 0,
+    "explanation": "Wrong firmware or an interrupted update can leave the system unable to start. Follow the exact vendor procedure and compatibility requirements.",
+    "lesson": {
+      "title": "Firmware update preparation",
+      "meaning": "Firmware is foundational startup software, so its update needs careful matching.",
+      "example": "Check the board revision and approved update method before flashing.",
+      "remember": "Exact model, correct update, stable power, vendor procedure."
+    }
+  },
+  {
+    "id": "ite8-expanded-023",
+    "module": 3,
+    "question": "What is a common role of a Trusted Platform Module (TPM)?",
+    "options": [
+      "Provide additional general-purpose RAM",
+      "Supply temporary power during an outage",
+      "Replace the need to manage encryption recovery keys",
+      "Support secure cryptographic key operations and platform security"
+    ],
+    "answer": 3,
+    "explanation": "A TPM supports security functions involving protected keys and platform integrity. It is not a general-purpose performance upgrade.",
+    "lesson": {
+      "title": "TPM",
+      "meaning": "Security hardware can help protect key material used by other security features.",
+      "example": "A device-encryption deployment checks TPM requirements and recovery-key arrangements.",
+      "remember": "TPM supports security; it does not replace backups or recovery planning."
+    }
+  },
+  {
+    "id": "ite8-expanded-024",
+    "module": 3,
+    "question": "A compatible hypervisor reports that hardware virtualization is disabled. Where might a technician need to enable it?",
+    "options": [
+      "The VM's desktop background settings",
+      "The printer-sharing settings",
+      "The system's UEFI/BIOS virtualization setting",
+      "The guest's file-system volume label"
+    ],
+    "answer": 2,
+    "explanation": "Supported CPUs may have virtualization features controlled by firmware. Verify platform support and the appropriate setting.",
+    "lesson": {
+      "title": "Hardware virtualization",
+      "meaning": "Capability and configuration are separate: a supported feature may still be disabled.",
+      "example": "Enable the documented virtualization option, then restart as required and retest.",
+      "remember": "Check both hardware support and firmware enablement."
+    }
+  },
+  {
+    "id": "ite8-expanded-025",
+    "module": 3,
+    "question": "A healthy RAID 5 array loses one drive. What property can allow it to continue operating in a degraded state?",
+    "options": [
+      "Every disk contains a complete independent copy",
+      "Distributed parity permits reconstruction of one failed drive's data",
+      "The array has no redundant information",
+      "Striping alone recreates missing data with no parity"
+    ],
+    "answer": 1,
+    "explanation": "RAID 5 combines striping with parity and can tolerate one drive failure in the usual configuration. Additional failures during degraded operation can cause loss.",
+    "lesson": {
+      "title": "RAID 5",
+      "meaning": "Parity stores information used to reconstruct missing data; it is not a full mirror on every disk.",
+      "example": "Replace the failed disk and rebuild according to the controller procedure while maintaining independent backups.",
+      "remember": "RAID 5: parity, at least three disks, one-disk fault tolerance."
+    }
+  },
+  {
+    "id": "ite8-expanded-026",
+    "module": 3,
+    "question": "What is the usual minimum number of drives for a RAID 10 array combining mirrored pairs with striping?",
+    "options": [
+      "Four",
+      "Two, because one mirrored pair also supplies the required striped pairs",
+      "Three, because RAID 10 is identical to RAID 5",
+      "One, because virtual volumes do not need physical drives"
+    ],
+    "answer": 0,
+    "explanation": "RAID 10 stripes across mirrored pairs. At least two pairs are required, giving the standard four-drive minimum.",
+    "lesson": {
+      "title": "RAID 10",
+      "meaning": "It combines mirroring for redundancy with striping across the pairs.",
+      "example": "A technician plans two mirrored pairs before creating a striped set across them.",
+      "remember": "RAID 10 = stripes across mirrors; standard minimum four drives."
+    }
+  },
+  {
+    "id": "ite8-expanded-027",
+    "module": 3,
+    "question": "Which device can supply temporary battery power during an outage so a PC can shut down gracefully?",
+    "options": [
+      "A basic surge-only power strip",
+      "A passive outlet adapter with no battery",
+      "An external PSU extension cable",
+      "Uninterruptible power supply (UPS)"
+    ],
+    "answer": 3,
+    "explanation": "A UPS includes stored energy and power-support functions. A simple surge protector does not provide sustained battery power during an outage.",
+    "lesson": {
+      "title": "UPS",
+      "meaning": "A UPS buys time; it is not an unlimited electricity source.",
+      "example": "Configure supported shutdown behavior so work can be saved before the UPS battery is exhausted.",
+      "remember": "UPS = temporary power during interruption."
+    }
+  },
+  {
+    "id": "ite8-expanded-028",
+    "module": 3,
+    "question": "Why is a surge-protected strip alone insufficient for an extended power outage?",
+    "options": [
+      "Surge protection always replaces the computer's PSU",
+      "It automatically creates an orderly OS shutdown",
+      "Surge suppression does not supply backup battery energy",
+      "It converts every outage into a harmless voltage spike"
+    ],
+    "answer": 2,
+    "explanation": "Protecting against voltage spikes differs from supplying electricity when mains power disappears.",
+    "lesson": {
+      "title": "Surge protection",
+      "meaning": "Different power problems require different protection functions.",
+      "example": "Choose suitable backup power when continuity through a short outage is needed.",
+      "remember": "Surge protection and battery backup are different functions."
+    }
+  },
+  {
+    "id": "ite8-expanded-029",
+    "module": 3,
+    "question": "Why should a firmware setup password not be treated as equivalent to full-disk encryption?",
+    "options": [
+      "Setup passwords and disk encryption always protect identical data",
+      "Restricting setup access does not itself encrypt stored files",
+      "Any firmware password encrypts all removable storage",
+      "Disk encryption only changes firmware-menu access"
+    ],
+    "answer": 1,
+    "explanation": "An access-control setting and data encryption protect different things. Storage protection requires appropriate encryption and recovery arrangements.",
+    "lesson": {
+      "title": "Firmware password scope",
+      "meaning": "A password prompt is not evidence that the underlying disk contents are encrypted.",
+      "example": "A removed unencrypted drive may expose data despite a firmware setup password.",
+      "remember": "Access restriction is not the same as encryption at rest."
+    }
+  },
+  {
+    "id": "ite8-expanded-030",
+    "module": 3,
+    "question": "A firmware change prevents startup. What is the best source for an approved recovery procedure?",
+    "options": [
+      "The exact motherboard or system manufacturer's documentation",
+      "A procedure for any board using the same CPU brand",
+      "A generic instruction to short pins while powered",
+      "An OS installation guide that ignores firmware recovery"
+    ],
+    "answer": 0,
+    "explanation": "Recovery methods vary by model. Guessing jumper positions or update procedures can make the problem worse.",
+    "lesson": {
+      "title": "Firmware recovery",
+      "meaning": "Hardware recovery needs model-specific instructions.",
+      "example": "Consult the documented recovery or reset method and its effect on settings before acting.",
+      "remember": "Use exact-model recovery guidance, not visual similarity."
+    }
+  },
+  {
+    "id": "ite8-expanded-031",
+    "module": 4,
+    "question": "Why is changing one variable at a time useful during diagnosis?",
+    "options": [
+      "It guarantees that the first proposed cause is correct",
+      "It eliminates the need for final verification",
+      "It makes documentation unnecessary",
+      "It helps identify which change affects the symptom"
+    ],
+    "answer": 3,
+    "explanation": "When several things change together, it becomes difficult to identify the cause of an improvement or a new fault.",
+    "lesson": {
+      "title": "Controlled troubleshooting",
+      "meaning": "A controlled test connects evidence to a specific change.",
+      "example": "Replace one suspect cable, retest, and record the result before changing a second part.",
+      "remember": "One controlled change → one interpretable result."
+    }
+  },
+  {
+    "id": "ite8-expanded-032",
+    "module": 4,
+    "question": "A PC loses network link. Replacing only its cable with a known-good equivalent restores it. What is the best interpretation?",
+    "options": [
+      "The DNS service is proven to be the only possible fault",
+      "The entire network is proven healthy in every respect",
+      "The original cable or its connection is implicated by the test",
+      "The CPU is proven defective by the restored link"
+    ],
+    "answer": 2,
+    "explanation": "A known-good substitution isolates a component or connection. It is useful evidence, though final verification and documentation still matter.",
+    "lesson": {
+      "title": "Known-good testing",
+      "meaning": "Compare a suspect component with an equivalent that works.",
+      "example": "Retest with the replacement cable and record stable link operation.",
+      "remember": "Use equivalent known-good parts to narrow the cause."
+    }
+  },
+  {
+    "id": "ite8-expanded-033",
+    "module": 4,
+    "question": "Which information is particularly useful for an intermittent shutdown?",
+    "options": [
+      "Only the current desktop appearance",
+      "Time, workload, temperatures and relevant logs when it occurs",
+      "Only the installed application's icon name",
+      "Only the replacement part's purchase price"
+    ],
+    "answer": 1,
+    "explanation": "A fault that comes and goes may depend on load, environment or timing. Correlating evidence helps identify the triggering conditions.",
+    "lesson": {
+      "title": "Intermittent problems",
+      "meaning": "Intermittent means conditions matter; capture the pattern.",
+      "example": "Shutdowns happen only under heavy load and rising temperatures, directing attention to cooling and power.",
+      "remember": "Record when, under what conditions, and what changed."
+    }
+  },
+  {
+    "id": "ite8-expanded-034",
+    "module": 4,
+    "question": "Before troubleshooting a failing drive containing important files, what is a priority?",
+    "options": [
+      "Protect required data using an appropriate approved recovery/backup approach",
+      "Run a destructive reformat before considering the data",
+      "Perform repeated write-intensive tests regardless of the fault",
+      "Assume a drive that still mounts needs no recovery planning"
+    ],
+    "answer": 0,
+    "explanation": "Troubleshooting can worsen some storage faults. Protecting important data and following an appropriate recovery process comes before avoidable write-intensive or destructive actions.",
+    "lesson": {
+      "title": "Protecting data",
+      "meaning": "A repair is not successful if it unnecessarily destroys the customer's data.",
+      "example": "Escalate a physically failing drive with critical unbacked data rather than experimenting with destructive tools.",
+      "remember": "Protect data before risky storage work."
+    }
+  },
+  {
+    "id": "ite8-expanded-035",
+    "module": 4,
+    "question": "What is an appropriate way to choose a computer-cleaning method?",
+    "options": [
+      "Use household cleaning chemicals on exposed powered circuitry",
+      "Use any vacuum without considering ESD or device instructions",
+      "Choose the strongest air pressure regardless of the device",
+      "Follow the manufacturer's procedure and ESD precautions"
+    ],
+    "answer": 3,
+    "explanation": "Cleaning methods must suit electronics and the device. Inappropriate liquids, tools or static-generating methods can cause damage.",
+    "lesson": {
+      "title": "Dust removal",
+      "meaning": "Preventive maintenance must not create a new fault.",
+      "example": "Power down as instructed and use approved cleaning tools for vents and components.",
+      "remember": "Use the device's approved cleaning process."
+    }
+  },
+  {
+    "id": "ite8-expanded-036",
+    "module": 4,
+    "question": "When using an approved air-cleaning method on a fan, what precaution may be required?",
+    "options": [
+      "Force the blades to maximum speed using the air stream",
+      "Hold the fan by bending a blade",
+      "Keep the fan from overspinning as instructed and avoid damage",
+      "Ignore the manufacturer's handling precautions"
+    ],
+    "answer": 2,
+    "explanation": "Uncontrolled airflow can overspin or damage a fan. Follow the manufacturer's guidance for holding or protecting it during cleaning.",
+    "lesson": {
+      "title": "Fan cleaning",
+      "meaning": "Cleaning airflow and normal powered operation are not the same condition.",
+      "example": "Clean accumulated dust using the recommended distance and fan-handling precautions.",
+      "remember": "Clean fans safely; do not use compressed air to race them."
+    }
+  },
+  {
+    "id": "ite8-expanded-037",
+    "module": 4,
+    "question": "A desktop is completely unresponsive. Which is an appropriate initial check?",
+    "options": [
+      "Reinstall Windows before checking incoming power",
+      "Verify the outlet, power cable and PSU switch",
+      "Replace the motherboard before checking the outlet",
+      "Reset application preferences before verifying PSU input"
+    ],
+    "answer": 1,
+    "explanation": "A system cannot start without incoming power. Checking the external supply path is a simple relevant first step.",
+    "lesson": {
+      "title": "No-power diagnosis",
+      "meaning": "Start with basic prerequisites before costly replacements.",
+      "example": "A switched-off PSU rocker explains a no-power condition without an internal component failure.",
+      "remember": "No power: verify the external power path first."
+    }
+  },
+  {
+    "id": "ite8-expanded-038",
+    "module": 4,
+    "question": "A PC starts overheating immediately after its cooler was removed and refitted. What should be checked first?",
+    "options": [
+      "Cooler seating, fan connection and thermal interface",
+      "The user's unrelated email configuration",
+      "The monitor's display color profile",
+      "The printer's selected paper size"
+    ],
+    "answer": 0,
+    "explanation": "The recent change is strong diagnostic evidence. An improperly mounted cooler or fan connection can explain the new temperature fault.",
+    "lesson": {
+      "title": "After-service fault",
+      "meaning": "Ask what changed just before the symptom started.",
+      "example": "Inspection finds the fan lead disconnected after cooler servicing.",
+      "remember": "Correlate the fault with the most recent relevant change."
+    }
+  },
+  {
+    "id": "ite8-expanded-039",
+    "module": 4,
+    "question": "Random crashes suggest a possible RAM fault. Which next step provides relevant evidence?",
+    "options": [
+      "Assume every random crash proves a failed RAM module",
+      "Reinstall the OS without testing the suspected memory",
+      "Replace the display cable as a definitive RAM test",
+      "Run an appropriate supported memory diagnostic"
+    ],
+    "answer": 3,
+    "explanation": "A memory diagnostic can help test the suspected subsystem. Crashes alone are not proof of defective RAM.",
+    "lesson": {
+      "title": "Memory testing",
+      "meaning": "Symptoms suggest a theory; testing supplies evidence.",
+      "example": "Use a supported memory test and assess results alongside seating and compatibility checks.",
+      "remember": "Suspected RAM faults should be tested, not assumed."
+    }
+  },
+  {
+    "id": "ite8-expanded-040",
+    "module": 4,
+    "question": "A technician notices a burning smell and visible damage while a computer is operating. What is the appropriate response?",
+    "options": [
+      "Continue powered stress testing to reproduce more damage",
+      "Open the connected PSU to inspect its internals",
+      "Stop use, isolate power safely and follow the incident/service procedure",
+      "Keep using the system if an application still responds"
+    ],
+    "answer": 2,
+    "explanation": "Continuing operation may worsen an electrical fault. Safe isolation and qualified assessment take priority over routine diagnosis.",
+    "lesson": {
+      "title": "Stop-work condition",
+      "meaning": "Some symptoms require stopping work rather than continuing ordinary tests.",
+      "example": "Power is safely isolated and the damaged unit is routed for approved assessment.",
+      "remember": "Smoke, burning or electrical damage: stop and follow safe procedures."
+    }
+  },
+  {
+    "id": "ite8-expanded-041",
+    "module": 5,
+    "question": "Which transport protocol provides an ordered, reliable byte stream between applications?",
+    "options": [
+      "UDP",
+      "TCP",
+      "ARP",
+      "ICMP"
+    ],
+    "answer": 1,
+    "explanation": "TCP uses mechanisms including sequencing and retransmission to provide reliable ordered delivery. UDP does not provide the same transport guarantees.",
+    "lesson": {
+      "title": "TCP",
+      "meaning": "Transport protocols provide different communication services.",
+      "example": "A file-transfer application needs delivered data in order and uses TCP.",
+      "remember": "TCP = reliable ordered stream; UDP = datagrams without those guarantees."
+    }
+  },
+  {
+    "id": "ite8-expanded-042",
+    "module": 5,
+    "question": "Which statement describes UDP at the transport layer?",
+    "options": [
+      "It sends datagrams without TCP-style connection setup and delivery guarantees",
+      "It guarantees ordered delivery and retransmits every lost datagram",
+      "It inherently encrypts all application data",
+      "It uses TCP's mandatory connection establishment"
+    ],
+    "answer": 0,
+    "explanation": "UDP provides datagram transport without built-in ordered reliable delivery. Applications can implement extra behavior themselves.",
+    "lesson": {
+      "title": "UDP",
+      "meaning": "A lightweight transport can favor timely sending over waiting for retransmissions.",
+      "example": "A real-time application may tolerate some loss rather than delaying every update.",
+      "remember": "UDP itself does not guarantee delivery or order."
+    }
+  },
+  {
+    "id": "ite8-expanded-043",
+    "module": 5,
+    "question": "Which TCP port is conventionally associated with HTTPS?",
+    "options": [
+      "80",
+      "22",
+      "3389",
+      "443"
+    ],
+    "answer": 3,
+    "explanation": "HTTPS conventionally uses TCP 443 for secure web communication. Other listed ports serve different common purposes.",
+    "lesson": {
+      "title": "HTTPS port",
+      "meaning": "A port identifies a service endpoint, not a physical connector.",
+      "example": "A firewall rule for a conventional HTTPS service allows its required TCP destination port.",
+      "remember": "HTTPS commonly uses TCP 443."
+    }
+  },
+  {
+    "id": "ite8-expanded-044",
+    "module": 5,
+    "question": "Which service conventionally uses TCP port 22 for secure remote administration?",
+    "options": [
+      "Telnet",
+      "FTP control",
+      "SSH",
+      "RDP"
+    ],
+    "answer": 2,
+    "explanation": "SSH commonly uses TCP 22 and provides encrypted remote access. A port number alone still does not prove a service's identity.",
+    "lesson": {
+      "title": "SSH port",
+      "meaning": "Remote-management protocols differ in purpose and protection.",
+      "example": "An administrator selects SSH rather than an unencrypted remote terminal protocol.",
+      "remember": "SSH commonly uses TCP 22."
+    }
+  },
+  {
+    "id": "ite8-expanded-045",
+    "module": 5,
+    "question": "Which port is conventionally used by DNS over UDP or TCP?",
+    "options": [
+      "67",
+      "53",
+      "443",
+      "25"
+    ],
+    "answer": 1,
+    "explanation": "Traditional DNS uses port 53 and can use UDP or TCP. Treating DNS as UDP-only overlooks supported TCP uses.",
+    "lesson": {
+      "title": "DNS transport",
+      "meaning": "One service can use more than one transport.",
+      "example": "A network must permit the DNS traffic required by its design rather than assuming every lookup uses only one transport.",
+      "remember": "Traditional DNS: port 53, UDP and TCP."
+    }
+  },
+  {
+    "id": "ite8-expanded-046",
+    "module": 5,
+    "question": "Which UDP port pair is associated with DHCPv4 servers and clients?",
+    "options": [
+      "Server 67 and client 68",
+      "Server 68 and client 67",
+      "Server 53 and client 53",
+      "Server 80 and client 443"
+    ],
+    "answer": 0,
+    "explanation": "DHCPv4 uses UDP 67 on the server side and 68 on the client side. These support configuration exchange, not name resolution.",
+    "lesson": {
+      "title": "DHCP ports",
+      "meaning": "DHCP has distinct client and server communication roles.",
+      "example": "An address-allocation capture shows DHCP messages between the client and server port pair.",
+      "remember": "DHCPv4 = UDP 67/68."
+    }
+  },
+  {
+    "id": "ite8-expanded-047",
+    "module": 5,
+    "question": "What information does a typical Ethernet switch use to learn which port leads to a local device?",
+    "options": [
+      "Only the source IP subnet mask",
+      "The destination application's user account",
+      "Only the configured DNS server address",
+      "Source MAC addresses observed in frames"
+    ],
+    "answer": 3,
+    "explanation": "A switch learns source MAC addresses on ingress ports and uses its forwarding information for destination frames.",
+    "lesson": {
+      "title": "Switch forwarding",
+      "meaning": "MAC addresses support local Ethernet delivery.",
+      "example": "After a PC sends a frame, the switch can associate its source MAC with the receiving port.",
+      "remember": "Switch learning uses source MAC addresses and ingress ports."
+    }
+  },
+  {
+    "id": "ite8-expanded-048",
+    "module": 5,
+    "question": "What is a typical role of a wireless access point?",
+    "options": [
+      "Route all networks regardless of its configured function",
+      "Assign every client's address without any DHCP service",
+      "Connect wireless clients to a network",
+      "Replace the wired network's switching function in every design"
+    ],
+    "answer": 2,
+    "explanation": "An AP provides wireless network access and typically bridges clients into the associated network. Routing and internet service may be separate functions.",
+    "lesson": {
+      "title": "Wireless access point",
+      "meaning": "Wireless access and routing are distinct roles even when one home device combines them.",
+      "example": "An office adds APs for Wi-Fi coverage while retaining its existing router.",
+      "remember": "AP = wireless access; router = forwards between networks."
+    }
+  },
+  {
+    "id": "ite8-expanded-049",
+    "module": 5,
+    "question": "Why might fiber be selected for a link near strong electromagnetic interference?",
+    "options": [
+      "Fiber always eliminates distance limitations",
+      "It carries optical signals and is not subject to EMI pickup like copper conductors",
+      "Any fiber connector works with every transceiver",
+      "Fiber automatically supplies PoE to attached devices"
+    ],
+    "answer": 1,
+    "explanation": "Fiber transmits light rather than electrical data signals in copper. Compatible optics, distance and installation requirements still apply.",
+    "lesson": {
+      "title": "Fiber and interference",
+      "meaning": "Choose a medium for the environment, not only the connector's appearance.",
+      "example": "A link near industrial equipment uses suitable fiber and optics.",
+      "remember": "Fiber resists electromagnetic interference but still needs compatible equipment."
+    }
+  },
+  {
+    "id": "ite8-expanded-050",
+    "module": 5,
+    "question": "How many conventional usable host addresses are in an IPv4 /26 subnet?",
+    "options": [
+      "62",
+      "64",
+      "126",
+      "254"
+    ],
+    "answer": 0,
+    "explanation": "A /26 leaves 6 host bits: 2^6 gives 64 addresses. For a conventional subnet, subtract the network and broadcast addresses to get 62 usable hosts.",
+    "lesson": {
+      "title": "Subnet capacity",
+      "meaning": "Prefix length determines how many bits remain for hosts.",
+      "example": "A segment requiring 50 host addresses fits within a conventional /26 capacity.",
+      "remember": "For /26: 32−26=6; 2^6−2=62."
+    },
+    "references": [
+      {
+        "title": "Cisco: IPv4 addressing and subnetting",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios-xe/ip-addressing/ip-addressing/m_config-ipv4-addr-0.html"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-051",
+    "module": 6,
+    "question": "A host is 192.168.10.20/24. Which destination is in its local subnet?",
+    "options": [
+      "192.168.11.20",
+      "192.168.20.10",
+      "192.168.0.20",
+      "192.168.10.200"
+    ],
+    "answer": 3,
+    "explanation": "With /24, the first three octets identify this network. 192.168.10.200 shares that network portion.",
+    "lesson": {
+      "title": "Local versus remote",
+      "meaning": "Use the mask rather than guessing from one matching number.",
+      "example": "The host can attempt local delivery to 192.168.10.200 without treating it as a remote subnet.",
+      "remember": "For this /24, local addresses share 192.168.10."
+    },
+    "references": [
+      {
+        "title": "Cisco: IPv4 addressing and subnetting",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios-xe/ip-addressing/ip-addressing/m_config-ipv4-addr-0.html"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-052",
+    "module": 6,
+    "question": "Which dotted-decimal subnet mask corresponds to /26?",
+    "options": [
+      "255.255.255.0",
+      "255.255.255.128",
+      "255.255.255.192",
+      "255.255.255.252"
+    ],
+    "answer": 2,
+    "explanation": "A /26 has 24 one-bits in the first three octets and two more in the last. Binary 11000000 is decimal 192.",
+    "lesson": {
+      "title": "Prefix conversion",
+      "meaning": "A prefix is the count of leading network bits.",
+      "example": "Convert /26 by writing 26 leading ones rather than memorizing an unrelated host count.",
+      "remember": "/26 = 255.255.255.192."
+    },
+    "references": [
+      {
+        "title": "Cisco: IPv4 addressing and subnetting",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios-xe/ip-addressing/ip-addressing/m_config-ipv4-addr-0.html"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-053",
+    "module": 6,
+    "question": "What is the broadcast address for 192.168.10.0/24?",
+    "options": [
+      "192.168.10.0",
+      "192.168.10.255",
+      "192.168.10.1",
+      "192.168.11.255"
+    ],
+    "answer": 1,
+    "explanation": "In this /24, all host bits set to one produce .255. The .0 address is the network address.",
+    "lesson": {
+      "title": "Broadcast address",
+      "meaning": "Broadcast and network addresses occupy distinct roles in a conventional subnet.",
+      "example": "Do not assign 192.168.10.255 as an ordinary host on that /24.",
+      "remember": "For 192.168.10.0/24: network .0; broadcast .255."
+    },
+    "references": [
+      {
+        "title": "Cisco: IPv4 addressing and subnetting",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/ios-xe/ip-addressing/ip-addressing/m_config-ipv4-addr-0.html"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-054",
+    "module": 6,
+    "question": "Which Windows command is intended to query DNS records during troubleshooting?",
+    "options": [
+      "nslookup",
+      "ipconfig /renew",
+      "tracert",
+      "netstat -an"
+    ],
+    "answer": 0,
+    "explanation": "nslookup queries DNS, providing relevant evidence for name-resolution problems. The other commands act on processes or storage.",
+    "lesson": {
+      "title": "DNS testing",
+      "meaning": "Test the service that matches the symptom.",
+      "example": "An IP works but a name fails; query that name with nslookup and inspect the response.",
+      "remember": "nslookup = DNS query tool."
+    },
+    "references": [
+      {
+        "title": "Microsoft: nslookup",
+        "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-055",
+    "module": 6,
+    "question": "Which Windows command helps identify the sequence of router hops toward a destination?",
+    "options": [
+      "nslookup",
+      "ipconfig /all",
+      "arp -a",
+      "tracert"
+    ],
+    "answer": 3,
+    "explanation": "tracert probes the path and reports responding hops. Missing replies may reflect filtering, so output needs interpretation.",
+    "lesson": {
+      "title": "Route tracing",
+      "meaning": "A path test differs from checking only one endpoint.",
+      "example": "A technician compares where responses stop along a route, while considering ICMP filtering.",
+      "remember": "tracert explores the path; ping tests echo reachability."
+    }
+  },
+  {
+    "id": "ite8-expanded-056",
+    "module": 6,
+    "question": "Which address is commonly used to test the local IPv4 loopback interface?",
+    "options": [
+      "169.254.1.1",
+      "192.168.1.1",
+      "127.0.0.1",
+      "255.255.255.255"
+    ],
+    "answer": 2,
+    "explanation": "127.0.0.1 refers to the local host through loopback. A successful loopback test does not prove the physical network works.",
+    "lesson": {
+      "title": "IPv4 loopback",
+      "meaning": "A local networking-stack test can succeed with the cable unplugged.",
+      "example": "Ping loopback while diagnosing local networking, then test the actual interface and network separately.",
+      "remember": "Loopback success is not proof of external connectivity."
+    }
+  },
+  {
+    "id": "ite8-expanded-057",
+    "module": 6,
+    "question": "Which command requests renewal of a Windows DHCP configuration on applicable adapters?",
+    "options": [
+      "ipconfig /flushdns",
+      "ipconfig /renew",
+      "ipconfig /displaydns",
+      "nslookup"
+    ],
+    "answer": 1,
+    "explanation": "/renew requests DHCP renewal; /flushdns clears cached DNS resolver entries. They address different functions.",
+    "lesson": {
+      "title": "DHCP renewal",
+      "meaning": "An address lease and a cached name lookup are different things.",
+      "example": "After fixing a DHCP connectivity issue, request renewal and inspect the resulting configuration.",
+      "remember": "/renew = DHCP lease; /flushdns = resolver cache."
+    },
+    "references": [
+      {
+        "title": "Microsoft: ipconfig",
+        "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-058",
+    "module": 6,
+    "question": "A client reaches an external service by IP but cannot resolve its hostname. What should be investigated next?",
+    "options": [
+      "DNS configuration and name-resolution responses",
+      "Replace the CPU before examining DNS",
+      "Treat a successful IP test as proof that name resolution works",
+      "Change printer drivers before testing the hostname lookup"
+    ],
+    "answer": 0,
+    "explanation": "Successful IP communication narrows the issue, while failed lookup specifically points toward DNS investigation. It does not prove every network component is healthy.",
+    "lesson": {
+      "title": "Isolating name-resolution faults",
+      "meaning": "Separate addressing/connectivity tests from name-resolution tests.",
+      "example": "Use ipconfig /all and nslookup to inspect the configured DNS path.",
+      "remember": "IP works, name fails: investigate DNS."
+    }
+  },
+  {
+    "id": "ite8-expanded-059",
+    "module": 6,
+    "question": "What does IPv4 NAT commonly do on an internet gateway?",
+    "options": [
+      "Resolve every domain name without DNS",
+      "Provide guaranteed end-to-end encryption",
+      "Replace all firewall rules with authentication",
+      "Translate addresses between an internal network and another addressing domain"
+    ],
+    "answer": 3,
+    "explanation": "NAT changes address information according to a translation policy. It is not itself a replacement for a complete firewall or authentication design.",
+    "lesson": {
+      "title": "NAT",
+      "meaning": "Private addressing and public-facing communication can use translation.",
+      "example": "Several internal clients access services through a gateway's translation rules.",
+      "remember": "NAT translates addresses; it does not mean all traffic is safe."
+    }
+  },
+  {
+    "id": "ite8-expanded-060",
+    "module": 6,
+    "question": "What does a Wi-Fi SSID primarily identify?",
+    "options": [
+      "A guarantee of the AP operator's identity",
+      "A mandatory secret that cannot be copied",
+      "The wireless network's name",
+      "Proof that strong wireless encryption is enabled"
+    ],
+    "answer": 2,
+    "explanation": "An SSID labels a wireless network. The name alone does not authenticate the operator or establish encryption strength.",
+    "lesson": {
+      "title": "SSID",
+      "meaning": "A familiar label can be copied by another transmitter.",
+      "example": "Verify the intended network and its security rather than trusting a name alone.",
+      "remember": "SSID = network name, not proof of trust."
+    }
+  },
+  {
+    "id": "ite8-expanded-061",
+    "module": 7,
+    "question": "A laptop's Wi-Fi suddenly stops after a key combination is pressed. What is a useful initial check?",
+    "options": [
+      "Replace the adapter before checking whether radios are disabled",
+      "Airplane mode and wireless enable settings",
+      "Reinstall the OS before checking wireless settings",
+      "Change the network's DNS record before checking the local radio"
+    ],
+    "answer": 1,
+    "explanation": "A wireless-disable control can stop connectivity without a failed adapter. Check settings and recent actions first.",
+    "lesson": {
+      "title": "Airplane mode",
+      "meaning": "A configuration switch can look like hardware failure.",
+      "example": "Re-enable wireless if it was unintentionally disabled, then reconnect and test.",
+      "remember": "Check wireless controls before replacing the adapter."
+    }
+  },
+  {
+    "id": "ite8-expanded-062",
+    "module": 7,
+    "question": "A laptop display is dim after a function-key press, but an image is clearly present. What should be checked first?",
+    "options": [
+      "Brightness settings and the relevant function-key controls",
+      "Replace the entire display before inspecting brightness settings",
+      "Repartition the system drive before checking the control",
+      "Treat it immediately as a proven GPU failure"
+    ],
+    "answer": 0,
+    "explanation": "The timing and symptom suggest a setting change before a component replacement. Check the simple control first.",
+    "lesson": {
+      "title": "Brightness control",
+      "meaning": "Recent changes provide diagnostic clues.",
+      "example": "Restore brightness using the documented keys or display settings and retest.",
+      "remember": "A dim screen may be a setting, not a failed display."
+    }
+  },
+  {
+    "id": "ite8-expanded-063",
+    "module": 7,
+    "question": "How should a removed laptop battery be disposed of?",
+    "options": [
+      "Dispose of it in general waste regardless of local procedures",
+      "Puncture it to remove stored charge before recycling",
+      "Burn it to prevent data recovery",
+      "Through an approved battery recycling or disposal process"
+    ],
+    "answer": 3,
+    "explanation": "Batteries require appropriate handling and disposal. Burning or puncturing them can create hazards.",
+    "lesson": {
+      "title": "Battery disposal",
+      "meaning": "Disposal is part of safe servicing, not an afterthought.",
+      "example": "Use the organization's or manufacturer's approved collection route.",
+      "remember": "Use approved battery disposal; do not puncture or burn."
+    }
+  },
+  {
+    "id": "ite8-expanded-064",
+    "module": 7,
+    "question": "Which statement normally describes hibernation?",
+    "options": [
+      "It retains the session only in continually powered RAM",
+      "It is the same as an ordinary restart with no saved state",
+      "It saves session state to storage for later resume with power removed",
+      "It always keeps every component fully powered"
+    ],
+    "answer": 2,
+    "explanation": "Hibernation stores the session state on persistent storage. Sleep typically retains the session in powered memory, with platform-specific behavior.",
+    "lesson": {
+      "title": "Hibernate versus sleep",
+      "meaning": "Different low-power states preserve work differently.",
+      "example": "A user chooses supported hibernation before an extended period without external power.",
+      "remember": "Hibernate saves state to storage; sleep normally relies on retained memory power."
+    }
+  },
+  {
+    "id": "ite8-expanded-065",
+    "module": 7,
+    "question": "Before replacing a laptop's system drive, what should be planned?",
+    "options": [
+      "Only verify that the replacement has a similar label",
+      "Data backup, recovery/installation media and hardware compatibility",
+      "Replace first and consider data recovery afterward",
+      "Assume replacing the drive retains the old installed OS automatically"
+    ],
+    "answer": 1,
+    "explanation": "Replacing the system drive affects data and startup. Compatible hardware and a recovery path must be prepared.",
+    "lesson": {
+      "title": "Storage upgrade preparation",
+      "meaning": "An upgrade includes migration and recovery, not just swapping hardware.",
+      "example": "Verify required files and installation/recovery tools before removing the old drive.",
+      "remember": "Protect data and plan how the new drive will boot."
+    }
+  },
+  {
+    "id": "ite8-expanded-066",
+    "module": 7,
+    "question": "While replacing an internal Wi-Fi card, what should guide antenna-lead handling?",
+    "options": [
+      "The exact service manual's connector positions and removal method",
+      "Pull on the antenna wires instead of the connectors",
+      "Choose the lead positions randomly",
+      "Treat every internal antenna connector as mechanically identical"
+    ],
+    "answer": 0,
+    "explanation": "Small antenna connectors and leads are easily damaged. Follow the model-specific procedure and documented placement.",
+    "lesson": {
+      "title": "Laptop antenna leads",
+      "meaning": "Serviceable parts can still have fragile connections.",
+      "example": "Record lead positions and disconnect using the approved technique.",
+      "remember": "Follow the manual; do not pull fragile connectors by their wires."
+    }
+  },
+  {
+    "id": "ite8-expanded-067",
+    "module": 7,
+    "question": "A laptop touchpad stops responding while an external mouse works. What is an appropriate initial check?",
+    "options": [
+      "Replace the touchpad before examining its enable state",
+      "Repartition storage to restore pointer input",
+      "Replace all RAM because an external mouse works",
+      "Touchpad enable settings and any hardware/function-key toggle"
+    ],
+    "answer": 3,
+    "explanation": "A disabled touchpad can explain the symptom without a hardware failure. Verify controls and relevant driver/device status.",
+    "lesson": {
+      "title": "Touchpad controls",
+      "meaning": "Use the symptom to isolate the affected input path.",
+      "example": "Check whether a shortcut or setting disabled the touchpad before ordering a replacement.",
+      "remember": "Check enable settings before assuming a failed touchpad."
+    }
+  },
+  {
+    "id": "ite8-expanded-068",
+    "module": 7,
+    "question": "Why is the exact laptop service manual useful before internal replacement?",
+    "options": [
+      "All models use an identical disassembly order",
+      "Physical resemblance guarantees identical replacement parts",
+      "Disassembly order and supported parts vary by model",
+      "A model manual removes the need for ESD precautions"
+    ],
+    "answer": 2,
+    "explanation": "Compact devices use model-specific fasteners, connectors and procedures. Guessing can damage cables or the case.",
+    "lesson": {
+      "title": "Service documentation",
+      "meaning": "A similar-looking laptop is not the same service design.",
+      "example": "Check screw lengths and battery-isolation steps in the exact model guide.",
+      "remember": "Exact model, approved part, documented procedure."
+    }
+  },
+  {
+    "id": "ite8-expanded-069",
+    "module": 7,
+    "question": "A laptop has USB-C, but a small phone charger cannot sustain it under load. What must be checked?",
+    "options": [
+      "Assume every fitting USB-C charger supplies enough power",
+      "Supported charging method and adequate adapter/cable power capability",
+      "Assume any USB-C cable supports every charging capability",
+      "Change the OS theme to enable higher adapter wattage"
+    ],
+    "answer": 1,
+    "explanation": "The connector shape does not guarantee compatible charging negotiation or enough power. Verify the laptop, charger and cable specifications.",
+    "lesson": {
+      "title": "USB-C charging",
+      "meaning": "Charging depends on supported power capabilities, not only a fitting plug.",
+      "example": "Use a compatible adapter and cable meeting the laptop's required power specifications.",
+      "remember": "USB-C shape alone does not establish charging compatibility or wattage."
+    }
+  },
+  {
+    "id": "ite8-expanded-070",
+    "module": 7,
+    "question": "Why should a replacement laptop adapter match manufacturer requirements?",
+    "options": [
+      "Connector, voltage and power specifications must be compatible",
+      "Only the connector's external dimensions",
+      "Only the adapter's brand name",
+      "Only whether the adapter can turn on its indicator light"
+    ],
+    "answer": 0,
+    "explanation": "An unsuitable adapter may fail to power the laptop or cause damage. Match the documented electrical and connector requirements.",
+    "lesson": {
+      "title": "Power adapter compatibility",
+      "meaning": "Power compatibility is a hardware requirement.",
+      "example": "Select the approved compatible adapter rather than guessing from connector size.",
+      "remember": "Check voltage, connector and required power capability."
+    }
+  },
+  {
+    "id": "ite8-expanded-071",
+    "module": 8,
+    "question": "Which printer feature prints on both sides of a sheet?",
+    "options": [
+      "Collation",
+      "Color calibration",
+      "Print spooling",
+      "Duplex printing"
+    ],
+    "answer": 3,
+    "explanation": "Duplex describes two-sided output. Collation concerns page ordering and OCR concerns recognizing text.",
+    "lesson": {
+      "title": "Duplex printing",
+      "meaning": "Printer terms refer to distinct functions.",
+      "example": "Enable duplex for a two-sided report when the printer and driver support it.",
+      "remember": "Duplex = both sides of the paper."
+    }
+  },
+  {
+    "id": "ite8-expanded-072",
+    "module": 8,
+    "question": "What does an automatic document feeder (ADF) primarily do?",
+    "options": [
+      "Bond toner to the printed sheet",
+      "Sort completed printed pages into sets",
+      "Feed multiple originals for scanning or copying",
+      "Convert digital jobs into a spool queue"
+    ],
+    "answer": 2,
+    "explanation": "An ADF feeds source pages to the scanner. It is not the printer's fuser or an operating-system feature.",
+    "lesson": {
+      "title": "ADF",
+      "meaning": "The input path for originals differs from the output printing mechanism.",
+      "example": "Load a multi-page original into the ADF instead of placing every page manually on the glass.",
+      "remember": "ADF = automatic feeding of originals."
+    }
+  },
+  {
+    "id": "ite8-expanded-073",
+    "module": 8,
+    "question": "A printer's built-in test page prints correctly, but one PC cannot print. What does this suggest?",
+    "options": [
+      "The entire network path is proven healthy",
+      "The printer can produce output; investigate the client's driver, queue or connection",
+      "The printer's mechanical output is proven impossible",
+      "All printer drivers on all clients are proven correct"
+    ],
+    "answer": 1,
+    "explanation": "A local test separates physical output capability from the client's print path. Further testing is needed to isolate the client issue.",
+    "lesson": {
+      "title": "Standalone test page",
+      "meaning": "Test at different points in the chain.",
+      "example": "Compare printer-local output with jobs from the affected PC and another client.",
+      "remember": "A good local test narrows the fault; it does not prove the client path works."
+    }
+  },
+  {
+    "id": "ite8-expanded-074",
+    "module": 8,
+    "question": "After a driver change, a printer produces unreadable characters from one PC. What should be checked?",
+    "options": [
+      "Correct driver and page-description-language compatibility",
+      "The display driver, before examining the printer driver",
+      "The printer's paper size as the only possible cause",
+      "The CPU's thermal interface as the primary print-language setting"
+    ],
+    "answer": 0,
+    "explanation": "An unsuitable driver can send output the printer interprets incorrectly. Verify the exact model and supported driver.",
+    "lesson": {
+      "title": "Printer driver mismatch",
+      "meaning": "The driver translates application output into a supported print language.",
+      "example": "Install the approved compatible driver and print a test page.",
+      "remember": "Correct printer model and supported driver matter."
+    }
+  },
+  {
+    "id": "ite8-expanded-075",
+    "module": 8,
+    "question": "One print job is stuck and later jobs do not proceed. What should be investigated?",
+    "options": [
+      "The monitor's active display input",
+      "The computer's CPU power connector",
+      "The printer's cosmetic panel color",
+      "The queue and spooler using the approved troubleshooting process"
+    ],
+    "answer": 3,
+    "explanation": "A blocked queue can prevent later work despite a functioning print mechanism. Review the specific job and spooler state.",
+    "lesson": {
+      "title": "Stuck queue",
+      "meaning": "Queue management and physical printing are separate stages.",
+      "example": "Resolve the stuck job with appropriate authorization, then submit a test job.",
+      "remember": "A queue blockage may affect later jobs."
+    }
+  },
+  {
+    "id": "ite8-expanded-076",
+    "module": 8,
+    "question": "Repeated paper jams occur after damp paper is loaded. What is an appropriate first action?",
+    "options": [
+      "Apply lubricant to the paper sheets",
+      "Compensate by changing the IP subnet mask",
+      "Use suitable dry paper and inspect the approved paper path",
+      "Assume all media types and humidity conditions feed identically"
+    ],
+    "answer": 2,
+    "explanation": "Media condition and suitability affect feeding. Follow the printer's supported media and jam-clearing instructions.",
+    "lesson": {
+      "title": "Paper handling",
+      "meaning": "Paper is a consumable with requirements, not an arbitrary sheet.",
+      "example": "Replace damp stock and load the tray correctly before retesting.",
+      "remember": "Check media condition, size, loading and paper path."
+    }
+  },
+  {
+    "id": "ite8-expanded-077",
+    "module": 8,
+    "question": "Which technology can print on heat-sensitive paper without a liquid ink cartridge?",
+    "options": [
+      "Thermal-transfer printing that requires a ribbon",
+      "Direct thermal printing",
+      "Dot-matrix impact printing with an inked ribbon",
+      "Inkjet printing with liquid ink cartridges"
+    ],
+    "answer": 1,
+    "explanation": "Direct thermal printers activate heat-sensitive media. This differs from thermal-transfer ribbon printing and other methods.",
+    "lesson": {
+      "title": "Direct thermal printing",
+      "meaning": "The required consumables depend on the print process.",
+      "example": "A receipt printer uses compatible heat-sensitive paper rather than an inkjet cartridge.",
+      "remember": "Direct thermal = heat-sensitive media."
+    }
+  },
+  {
+    "id": "ite8-expanded-078",
+    "module": 8,
+    "question": "What does increasing a scanner's selected DPI generally increase?",
+    "options": [
+      "Sampling detail and often file size",
+      "The scanner's physical page-feed capacity",
+      "The printer's available toner quantity",
+      "The network's permitted host count"
+    ],
+    "answer": 0,
+    "explanation": "More samples per inch can preserve more detail but often produce larger files. Choose a setting suitable for the original and purpose.",
+    "lesson": {
+      "title": "Scan resolution",
+      "meaning": "Higher resolution has storage and processing tradeoffs.",
+      "example": "A high-detail image scan may need more DPI than a simple document archive.",
+      "remember": "DPI = sampling density; more is not always necessary."
+    }
+  },
+  {
+    "id": "ite8-expanded-079",
+    "module": 8,
+    "question": "What is a common purpose of a print server?",
+    "options": [
+      "Replace every printer's physical imaging mechanism",
+      "Act as an independent substitute for paper and toner",
+      "Make every client use the same display driver",
+      "Manage and share printer access or print jobs for clients"
+    ],
+    "answer": 3,
+    "explanation": "A print server centralizes aspects of print access and job management. It does not perform the printer's mechanical imaging stages.",
+    "lesson": {
+      "title": "Print server",
+      "meaning": "Clients can submit through a shared service rather than manage every connection independently.",
+      "example": "An office administers a shared queue through a print server.",
+      "remember": "Print server = shared print service and management."
+    }
+  },
+  {
+    "id": "ite8-expanded-080",
+    "module": 8,
+    "question": "During laser printing, what happens in the developing stage?",
+    "options": [
+      "The fuser bonds toner to paper before an image is formed",
+      "The finished page is only placed in the output tray",
+      "Toner is attracted to the latent image on the photosensitive drum",
+      "The paper is scanned into a digital document"
+    ],
+    "answer": 2,
+    "explanation": "Development places toner onto the electrostatic image. Fusing later bonds toner to the paper through heat and pressure.",
+    "lesson": {
+      "title": "Laser development stage",
+      "meaning": "Imaging the drum and fixing the paper image are separate stages.",
+      "example": "Toner is developed on the drum before transfer to the sheet and final fusing.",
+      "remember": "Develop = toner on the image; fuse = bond toner to paper."
+    }
+  },
+  {
+    "id": "ite8-expanded-081",
+    "module": 9,
+    "question": "Which cloud model supplies a managed platform for deploying applications without managing the underlying server OS yourself?",
+    "options": [
+      "SaaS providing only a finished application",
+      "PaaS",
+      "IaaS requiring the customer to manage the guest OS",
+      "A local hypervisor with no managed platform service"
+    ],
+    "answer": 1,
+    "explanation": "PaaS supplies an application platform while the provider manages underlying platform infrastructure. Responsibilities depend on the service.",
+    "lesson": {
+      "title": "PaaS",
+      "meaning": "The customer focuses more on application deployment than server administration.",
+      "example": "Deploy code to a managed app platform rather than installing the server OS.",
+      "remember": "PaaS = platform for applications."
+    }
+  },
+  {
+    "id": "ite8-expanded-082",
+    "module": 9,
+    "question": "Which description best fits a public-cloud service?",
+    "options": [
+      "A provider offers cloud resources to multiple customers under its service model",
+      "All customer data must be accessible without authentication",
+      "The infrastructure must serve exactly one organization exclusively",
+      "Public cloud cannot enforce customer-specific access policies"
+    ],
+    "answer": 0,
+    "explanation": "Public cloud describes service provision, not automatic public access to all customer data. Access still requires proper controls.",
+    "lesson": {
+      "title": "Public cloud",
+      "meaning": "Public service availability and public data exposure are different ideas.",
+      "example": "A business uses provider-hosted infrastructure with restricted access to its resources.",
+      "remember": "Public cloud does not mean all stored data should be public."
+    }
+  },
+  {
+    "id": "ite8-expanded-083",
+    "module": 9,
+    "question": "Which characteristic best identifies a private cloud?",
+    "options": [
+      "Resources necessarily offered to all customers without restriction",
+      "Any desktop with a hidden folder",
+      "An internet connection that does not use a password",
+      "Cloud infrastructure dedicated to one organization"
+    ],
+    "answer": 3,
+    "explanation": "Private-cloud resources are dedicated to one organization; their location and management arrangement can vary.",
+    "lesson": {
+      "title": "Private cloud",
+      "meaning": "Dedicated use is the key distinction, not merely a hidden web address.",
+      "example": "An organization operates a dedicated cloud environment for its departments.",
+      "remember": "Private cloud = dedicated organizational use."
+    }
+  },
+  {
+    "id": "ite8-expanded-084",
+    "module": 9,
+    "question": "What does a hybrid-cloud design combine?",
+    "options": [
+      "Two unconnected USB backup drives",
+      "A single desktop running two browser tabs",
+      "Distinct cloud environments connected for coordinated use",
+      "A switch connected to two identical patch cables"
+    ],
+    "answer": 2,
+    "explanation": "Hybrid designs integrate distinct environments, commonly private and public clouds, with appropriate connectivity and management.",
+    "lesson": {
+      "title": "Hybrid cloud",
+      "meaning": "The environments remain distinct while supporting coordinated workloads or data flows.",
+      "example": "A business keeps some workloads in a private environment and integrates selected public-cloud services.",
+      "remember": "Hybrid = connected use of distinct cloud environments."
+    }
+  },
+  {
+    "id": "ite8-expanded-085",
+    "module": 9,
+    "question": "What does cloud elasticity describe?",
+    "options": [
+      "All provider resources remain permanently fixed despite demand",
+      "Adjusting allocated resources as demand changes",
+      "Every workload has unlimited free capacity",
+      "Adding users automatically eliminates resource limits"
+    ],
+    "answer": 1,
+    "explanation": "Elastic resources can scale up or down with demand. Configuration, limits and costs still require management.",
+    "lesson": {
+      "title": "Elasticity",
+      "meaning": "Capacity can follow workload rather than remain fixed.",
+      "example": "A service adds capacity for a busy period and reduces it afterward.",
+      "remember": "Elasticity = adapt resources to changing demand."
+    }
+  },
+  {
+    "id": "ite8-expanded-086",
+    "module": 9,
+    "question": "What can happen when too many VMs compete for limited host RAM?",
+    "options": [
+      "Host and guest performance can degrade",
+      "Every guest automatically receives unlimited physical RAM",
+      "Virtual RAM allocations eliminate host memory limits",
+      "The storage subsystem permanently becomes main memory"
+    ],
+    "answer": 0,
+    "explanation": "Virtualization shares finite hardware. Excess allocation or contention can cause paging, slowdowns or failures depending on the platform.",
+    "lesson": {
+      "title": "VM resource planning",
+      "meaning": "Virtual resources are backed by real limits.",
+      "example": "Reduce allocations or add suitable capacity after monitoring host memory pressure.",
+      "remember": "Virtualization does not create unlimited host resources."
+    }
+  },
+  {
+    "id": "ite8-expanded-087",
+    "module": 9,
+    "question": "Which setup is an example of a Type 2 hypervisor?",
+    "options": [
+      "A bare-metal hypervisor booted directly on physical hardware",
+      "Firmware POST with no guest-management layer",
+      "A normal application with no virtualization functions",
+      "A desktop virtualization application running within a host OS"
+    ],
+    "answer": 3,
+    "explanation": "Type 2 virtualization is hosted within an operating-system environment. Type 1 runs directly on the hardware.",
+    "lesson": {
+      "title": "Type 2 hypervisor",
+      "meaning": "The placement of the virtualization layer defines the distinction.",
+      "example": "A learner installs a virtualization application on a normal workstation.",
+      "remember": "Type 2 = hosted hypervisor."
+    }
+  },
+  {
+    "id": "ite8-expanded-088",
+    "module": 9,
+    "question": "Which VM network mode typically places a guest on the host's external network as a separate network participant?",
+    "options": [
+      "Disconnected adapter mode",
+      "Internal-only networking with no external bridge",
+      "Bridged networking",
+      "A host-only adapter with no routing to the LAN"
+    ],
+    "answer": 2,
+    "explanation": "Bridging connects the guest to an external network through the host's networking path. The network's policies still apply.",
+    "lesson": {
+      "title": "Bridged VM networking",
+      "meaning": "A guest can appear as another device rather than only using a private translated path.",
+      "example": "A lab guest obtains an appropriate address on the same external network as permitted.",
+      "remember": "Bridged = guest participates on the external network."
+    },
+    "references": [
+      {
+        "title": "Oracle: Virtual networking",
+        "url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/networkingdetails.html"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-089",
+    "module": 9,
+    "question": "Which VM mode commonly permits guest outbound connections through the host's NAT engine?",
+    "options": [
+      "A disconnected virtual adapter",
+      "NAT networking",
+      "A guest with only an isolated internal network and no router",
+      "A disk snapshot without a network interface"
+    ],
+    "answer": 1,
+    "explanation": "NAT translates guest traffic through the host's networking arrangement. Inbound access generally needs additional configuration.",
+    "lesson": {
+      "title": "NAT VM networking",
+      "meaning": "Outbound convenience does not automatically expose every guest service inbound.",
+      "example": "A guest downloads updates through NAT without being directly addressed as an external LAN peer.",
+      "remember": "NAT mode commonly supports outbound guest access."
+    },
+    "references": [
+      {
+        "title": "Oracle: Virtual networking",
+        "url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/networkingdetails.html"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-090",
+    "module": 9,
+    "question": "Which VM mode is suitable for communication between a host and guests without direct access to the external LAN by that adapter?",
+    "options": [
+      "Host-only networking",
+      "Bridged networking onto the external LAN",
+      "A guest adapter disconnected from every network",
+      "A standard externally bridged virtual NIC by definition"
+    ],
+    "answer": 0,
+    "explanation": "Host-only networking provides a host/guest network through a virtual interface. Routing or other adapters can change overall connectivity, so inspect the full configuration.",
+    "lesson": {
+      "title": "Host-only VM networking",
+      "meaning": "A virtual lab can have a private communication segment.",
+      "example": "Use host-only mode for a host-to-guest exercise and avoid adding unintended external paths.",
+      "remember": "Host-only describes that adapter's network; review all adapters and routing."
+    },
+    "references": [
+      {
+        "title": "Oracle: Virtual networking",
+        "url": "https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/networkingdetails.html"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-091",
+    "module": 10,
+    "question": "Why can a conventional 32-bit client OS fail to make all 8 GB of installed RAM usable?",
+    "options": [
+      "All 8 GB automatically becomes CPU cache",
+      "A 32-bit application guarantees the whole OS can use all RAM",
+      "Memory-generation compatibility becomes irrelevant above 4 GB",
+      "Its address-space and platform limits can restrict usable memory"
+    ],
+    "answer": 3,
+    "explanation": "A 32-bit address space is limited, and platform/OS details affect usable RAM. A compatible 64-bit environment is normally needed to use substantially more memory.",
+    "lesson": {
+      "title": "32-bit addressing",
+      "meaning": "Installed capacity and OS-addressable capacity are different.",
+      "example": "Check OS architecture and platform support before upgrading a workstation's memory.",
+      "remember": "Check hardware and OS memory support, not just the installed total."
+    }
+  },
+  {
+    "id": "ite8-expanded-092",
+    "module": 10,
+    "question": "When installing a 64-bit Windows edition, what driver requirement matters?",
+    "options": [
+      "Any driver with the same product name is compatible",
+      "Every 32-bit kernel driver works unchanged on a 64-bit OS",
+      "Use supported drivers for that OS and architecture",
+      "The device's physical connection removes all architecture requirements"
+    ],
+    "answer": 2,
+    "explanation": "Drivers interact closely with the OS and hardware. The supported architecture and Windows version must match.",
+    "lesson": {
+      "title": "64-bit drivers",
+      "meaning": "Application compatibility does not imply kernel-driver compatibility.",
+      "example": "Obtain the vendor's supported 64-bit driver rather than reusing an incompatible older driver.",
+      "remember": "Match drivers to the device, OS version and architecture."
+    }
+  },
+  {
+    "id": "ite8-expanded-093",
+    "module": 10,
+    "question": "What is the purpose of Windows activation in a properly licensed installation?",
+    "options": [
+      "Back up user files as part of every activation",
+      "Validate the installation's licensing entitlement through the supported process",
+      "Automatically test all hardware and device drivers",
+      "Create a recovery copy of the previous OS"
+    ],
+    "answer": 1,
+    "explanation": "Installation and licensing validation are separate aspects of deployment. Activation does not provide backups or guarantee all hardware works.",
+    "lesson": {
+      "title": "Activation versus installation",
+      "meaning": "A running installer does not settle every licensing requirement.",
+      "example": "Use the organization's legitimate licensing and activation procedure.",
+      "remember": "Installation, activation and hardware verification are distinct tasks."
+    }
+  },
+  {
+    "id": "ite8-expanded-094",
+    "module": 10,
+    "question": "For a modern UEFI installation using a large disk beyond traditional MBR addressing limits, which partition scheme is normally appropriate?",
+    "options": [
+      "GPT",
+      "FAT32 used as a replacement partition table",
+      "MBR regardless of its applicable size limits",
+      "NTFS used as the firmware boot mode"
+    ],
+    "answer": 0,
+    "explanation": "GPT is a partitioning scheme suited to modern UEFI deployments and large disks. FAT32 is a file system, not an alternative partition-table scheme.",
+    "lesson": {
+      "title": "Large disks",
+      "meaning": "Partition layout and file-system format answer different questions.",
+      "example": "Plan the supported GPT layout rather than expecting a file-system change alone to solve an MBR limit.",
+      "remember": "GPT = partition scheme; NTFS/FAT32 = file systems."
+    }
+  },
+  {
+    "id": "ite8-expanded-095",
+    "module": 10,
+    "question": "What is the primary role of the EFI System Partition in a UEFI OS installation?",
+    "options": [
+      "Store only ordinary user documents",
+      "Hold the currently running CPU cache",
+      "Replace the need for the OS's bootloader files",
+      "Store files used by firmware to boot installed systems"
+    ],
+    "answer": 3,
+    "explanation": "The EFI System Partition holds boot-related files used in a UEFI environment. Deleting it can prevent startup even when user files remain.",
+    "lesson": {
+      "title": "EFI System Partition",
+      "meaning": "A disk can contain small system partitions essential to booting.",
+      "example": "Do not delete a small unfamiliar boot partition simply to gain space.",
+      "remember": "Small system partitions can be critical to startup."
+    }
+  },
+  {
+    "id": "ite8-expanded-096",
+    "module": 10,
+    "question": "Windows setup lists several disks and partitions. What should be done before deleting any partition?",
+    "options": [
+      "Delete every partition because setup lists it",
+      "Choose a disk only by its reported size",
+      "Identify the correct target and verify authorization and backups",
+      "Assume small partitions can never contain critical boot files"
+    ],
+    "answer": 2,
+    "explanation": "Partition deletion is destructive. Confirm the disk's identity, existing data and recovery arrangements first.",
+    "lesson": {
+      "title": "Selecting the target disk",
+      "meaning": "Storage operations need exact targets.",
+      "example": "Disconnect nonessential drives when appropriate and follow the approved installation plan.",
+      "remember": "Verify the target before any delete or format operation."
+    }
+  },
+  {
+    "id": "ite8-expanded-097",
+    "module": 10,
+    "question": "Which choice best describes an in-place OS upgrade compared with a clean installation?",
+    "options": [
+      "It always removes all previous applications by definition",
+      "It aims to retain supported applications, settings and data while replacing/upgrading the OS",
+      "It eliminates the need for compatibility checks",
+      "It is identical to deleting all partitions and starting fresh"
+    ],
+    "answer": 1,
+    "explanation": "An in-place upgrade aims to preserve supported parts of the existing environment. Compatibility and backup planning remain important.",
+    "lesson": {
+      "title": "Upgrade installation",
+      "meaning": "Upgrade and fresh installation have different retention goals.",
+      "example": "Verify supported upgrade paths and back up before proceeding.",
+      "remember": "Upgrade aims to retain; clean install creates a fresh environment."
+    }
+  },
+  {
+    "id": "ite8-expanded-098",
+    "module": 10,
+    "question": "Where should a technician normally obtain a replacement device driver?",
+    "options": [
+      "The device/system vendor or another approved trusted update source",
+      "An unsolicited attachment claiming to update all drivers",
+      "A package chosen only because its filename matches",
+      "An unverified mirror requiring permanent security disabling"
+    ],
+    "answer": 0,
+    "explanation": "Drivers run with significant system access. Use approved sources and the exact supported device/OS package.",
+    "lesson": {
+      "title": "Trusted driver source",
+      "meaning": "The origin of system software matters.",
+      "example": "Download the supported network driver from the vendor or organization's repository.",
+      "remember": "Trusted source + correct model + supported OS."
+    }
+  },
+  {
+    "id": "ite8-expanded-099",
+    "module": 10,
+    "question": "After a basic OS installation succeeds, what should happen before normal deployment?",
+    "options": [
+      "Assume one successful boot proves every device works",
+      "Skip required security configuration until a failure occurs",
+      "Treat installation completion as a substitute for functional testing",
+      "Apply approved updates, verify drivers and test required functions"
+    ],
+    "answer": 3,
+    "explanation": "A completed installer is only one deployment milestone. Updates, drivers and functional checks prepare the system for actual use.",
+    "lesson": {
+      "title": "Post-install updates",
+      "meaning": "Ready to boot is not the same as ready for the user's work.",
+      "example": "Test networking, display, audio and required applications after approved configuration.",
+      "remember": "Install → update/configure → verify → hand over."
+    }
+  },
+  {
+    "id": "ite8-expanded-100",
+    "module": 10,
+    "question": "Which test best verifies the user's actual requirement after a network-adapter driver installation?",
+    "options": [
+      "Only confirm that the installer window closed",
+      "Only check that a desktop shortcut exists",
+      "Confirm the adapter status and test the required network activity",
+      "Assume driver setup proves the required remote service is reachable"
+    ],
+    "answer": 2,
+    "explanation": "A driver's setup completion does not prove connectivity. Verify the device and the intended network function.",
+    "lesson": {
+      "title": "Installation verification",
+      "meaning": "Test the outcome the user needs.",
+      "example": "Confirm valid configuration and reach the required service after installing the driver.",
+      "remember": "Verify function, not just a successful setup message."
+    }
+  },
+  {
+    "id": "ite8-expanded-101",
+    "module": 11,
+    "question": "Which Windows tool is most suitable for reviewing recorded system and application events?",
+    "options": [
+      "Task Manager's live CPU graph",
+      "Event Viewer",
+      "Disk Management's partition list",
+      "Device Manager's hardware tree"
+    ],
+    "answer": 1,
+    "explanation": "Event Viewer presents event logs that can help correlate failures with time and components. Events require interpretation, not automatic blame.",
+    "lesson": {
+      "title": "Event Viewer",
+      "meaning": "Logs provide historical evidence.",
+      "example": "Review events around an unexpected restart and compare them with the observed symptoms.",
+      "remember": "Event Viewer = recorded events, not a live CPU-usage chart."
+    }
+  },
+  {
+    "id": "ite8-expanded-102",
+    "module": 11,
+    "question": "Which Windows management interface can start, stop or configure background services under appropriate authority?",
+    "options": [
+      "Services management console",
+      "Task Manager's process list as a substitute for every service setting",
+      "Disk Management",
+      "The default-program selection panel"
+    ],
+    "answer": 0,
+    "explanation": "The Services console administers service state and startup behavior. Changes can affect dependencies, so follow the approved procedure.",
+    "lesson": {
+      "title": "Services",
+      "meaning": "Services perform background functions distinct from interactive applications.",
+      "example": "Check an affected service's status and dependencies before restarting it.",
+      "remember": "Manage services deliberately; understand dependencies and impact."
+    }
+  },
+  {
+    "id": "ite8-expanded-103",
+    "module": 11,
+    "question": "Why might an approved selective-startup or clean-boot test help diagnose a Windows problem?",
+    "options": [
+      "It permanently repairs every faulty disk",
+      "It bypasses the need to verify the affected application",
+      "It proves every disabled service is malicious",
+      "It can help isolate interference from startup software or services"
+    ],
+    "answer": 3,
+    "explanation": "Reducing startup components can help isolate software interactions. Follow the documented procedure and restore normal configuration appropriately.",
+    "lesson": {
+      "title": "Startup diagnosis",
+      "meaning": "An isolation test temporarily changes what starts, not the hardware itself.",
+      "example": "A fault disappears under a supported clean-boot test, guiding further startup-component isolation.",
+      "remember": "Clean boot is diagnostic isolation, not a universal permanent fix."
+    }
+  },
+  {
+    "id": "ite8-expanded-104",
+    "module": 11,
+    "question": "Which Windows utility shows disks, partitions and volume information?",
+    "options": [
+      "Device Manager's driver tab",
+      "Event Viewer's event list",
+      "Disk Management",
+      "Task Manager's startup list"
+    ],
+    "answer": 2,
+    "explanation": "Disk Management administers storage layout and volumes. Some operations are destructive and require preparation.",
+    "lesson": {
+      "title": "Disk Management",
+      "meaning": "Storage structure is separate from the list of running programs.",
+      "example": "Inspect a newly attached disk's status before deciding whether initialization is appropriate.",
+      "remember": "Inspect first; do not initialize a disk containing needed data by guesswork."
+    }
+  },
+  {
+    "id": "ite8-expanded-105",
+    "module": 11,
+    "question": "What is the main purpose of chkdsk?",
+    "options": [
+      "Validate only protected Windows operating-system file contents",
+      "Check a volume's file-system structure and report or repair supported errors with appropriate options",
+      "Identify router hops to an internet server",
+      "Query DNS server records"
+    ],
+    "answer": 1,
+    "explanation": "CHKDSK examines a volume and file-system state. Repair options can change data and require suitable backup/recovery planning.",
+    "lesson": {
+      "title": "CHKDSK",
+      "meaning": "File-system checking is different from checking Windows system-file contents.",
+      "example": "Select supported checks after assessing disk health and protecting important data.",
+      "remember": "CHKDSK = volume/file-system checks; SFC = protected Windows files."
+    },
+    "references": [
+      {
+        "title": "Microsoft: chkdsk",
+        "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-106",
+    "module": 11,
+    "question": "What does DISM commonly help service or repair in Windows administration?",
+    "options": [
+      "Windows images and the component store using supported commands",
+      "Physical motherboard socket pins",
+      "Printer roller alignment",
+      "RAM module notch placement"
+    ],
+    "answer": 0,
+    "explanation": "DISM is an image-servicing tool. Supported repair workflows can use it to address component-store issues; it is not a hardware repair tool.",
+    "lesson": {
+      "title": "DISM",
+      "meaning": "Different integrity tools target different system layers.",
+      "example": "An administrator follows Microsoft's supported DISM/SFC recovery procedure and reviews results.",
+      "remember": "DISM services Windows images/components; use the documented command and source."
+    },
+    "references": [
+      {
+        "title": "Microsoft: Repair a Windows image",
+        "url": "https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/repair-a-windows-image"
+      }
+    ]
+  },
+  {
+    "id": "ite8-expanded-107",
+    "module": 11,
+    "question": "Why can a process ID (PID) be useful when ending a specific unresponsive process?",
+    "options": [
+      "It supplies the user's authentication password",
+      "It identifies a physical network port",
+      "It proves a process is safe to terminate without checking",
+      "It identifies a particular running process instance"
+    ],
+    "answer": 3,
+    "explanation": "A PID distinguishes process instances, including cases with similar names. Ending a process can lose unsaved work, so verify the target.",
+    "lesson": {
+      "title": "Process ID",
+      "meaning": "A name may be shared; an instance identifier is more specific.",
+      "example": "Confirm the intended process before using an authorized taskkill operation.",
+      "remember": "Verify the process and consequences before ending it."
+    }
+  },
+  {
+    "id": "ite8-expanded-108",
+    "module": 11,
+    "question": "A supported driver update causes a previously working device to fail. Which option may be appropriate after diagnosis?",
+    "options": [
+      "Format all data volumes before assessing the recent change",
+      "Keep the failing driver without testing because newer is always better",
+      "Roll back to the previous supported driver using the approved process",
+      "Replace unrelated network equipment immediately"
+    ],
+    "answer": 2,
+    "explanation": "A recent driver change can be tested by returning to a known supported version when available. Preserve the ability to recover and verify the result.",
+    "lesson": {
+      "title": "Driver rollback",
+      "meaning": "Reversing a relevant recent change can test a cause.",
+      "example": "Use the supported rollback or reinstall method and retest the device.",
+      "remember": "Recent driver change + new fault: investigate and consider supported rollback."
+    }
+  },
+  {
+    "id": "ite8-expanded-109",
+    "module": 11,
+    "question": "A user needs to view a report but must not modify it. Which permission approach follows least privilege?",
+    "options": [
+      "Grant Full Control because Read is always insufficient",
+      "Grant appropriate read access without unnecessary write rights",
+      "Give local administrator rights for every document",
+      "Disable permissions entirely for the containing drive"
+    ],
+    "answer": 1,
+    "explanation": "Read access meets the stated requirement while unnecessary write or administrative rights increase risk. Effective permissions still depend on the complete policy.",
+    "lesson": {
+      "title": "File permissions",
+      "meaning": "Permissions should follow the work requirement.",
+      "example": "Apply the organization's group-based access process and test the intended read-only behavior.",
+      "remember": "Grant the minimum access needed and verify effective access."
+    }
+  },
+  {
+    "id": "ite8-expanded-110",
+    "module": 11,
+    "question": "An approved app needs one documented inbound service port. What is the better firewall change?",
+    "options": [
+      "Add a narrowly scoped approved rule for the required traffic",
+      "Disable the firewall on every profile indefinitely",
+      "Allow all inbound ports from all sources",
+      "Remove the service's authentication requirement"
+    ],
+    "answer": 0,
+    "explanation": "A specific rule supports the required service while limiting exposure. Broadly disabling protection grants more access than the task needs.",
+    "lesson": {
+      "title": "Firewall exception",
+      "meaning": "Permit the needed communication, with appropriate scope.",
+      "example": "Restrict the rule by port, profile and source where required by policy, then test.",
+      "remember": "Narrow, approved exceptions are preferable to disabling the firewall."
+    }
+  },
+  {
+    "id": "ite8-expanded-111",
+    "module": 12,
+    "question": "Which Linux command displays the current working directory?",
+    "options": [
+      "cd",
+      "ls",
+      "whoami",
+      "pwd"
+    ],
+    "answer": 3,
+    "explanation": "pwd reports the current directory path. It does not change that directory or delete its contents.",
+    "lesson": {
+      "title": "pwd",
+      "meaning": "A shell operates relative to a current location.",
+      "example": "Run pwd before a file operation to confirm where you are.",
+      "remember": "pwd = print working directory."
+    }
+  },
+  {
+    "id": "ite8-expanded-112",
+    "module": 12,
+    "question": "Which shell command changes the current working directory?",
+    "options": [
+      "ls",
+      "pwd",
+      "cd",
+      "mkdir"
+    ],
+    "answer": 2,
+    "explanation": "cd changes the shell's current directory. ls lists entries without changing location.",
+    "lesson": {
+      "title": "cd",
+      "meaning": "Navigation and listing are separate actions.",
+      "example": "Use cd to enter the intended folder, then pwd to verify it.",
+      "remember": "cd = change directory; ls = list entries."
+    }
+  },
+  {
+    "id": "ite8-expanded-113",
+    "module": 12,
+    "question": "What is the purpose of chmod on Unix-like systems?",
+    "options": [
+      "Change the file's owner and group by definition",
+      "Change file-mode permission bits",
+      "List active IP connections",
+      "Alter the contents of every matching file"
+    ],
+    "answer": 1,
+    "explanation": "chmod changes mode permissions for appropriate files. Access and ownership rules still determine who may perform the change.",
+    "lesson": {
+      "title": "chmod",
+      "meaning": "Permissions govern allowed actions on files and directories.",
+      "example": "An authorized administrator grants only the required execute permission to an intended script.",
+      "remember": "chmod changes modes; it does not change the file's contents."
+    }
+  },
+  {
+    "id": "ite8-expanded-114",
+    "module": 12,
+    "question": "Which command is commonly used to search text for a matching pattern?",
+    "options": [
+      "grep",
+      "mkdir",
+      "chown",
+      "pwd"
+    ],
+    "answer": 0,
+    "explanation": "grep searches input text for patterns and prints matching results according to its options. It is useful for examining logs.",
+    "lesson": {
+      "title": "grep",
+      "meaning": "Filtering text can reveal relevant evidence without changing the source.",
+      "example": "Search an approved log for a specific error string.",
+      "remember": "grep = text pattern search."
+    }
+  },
+  {
+    "id": "ite8-expanded-115",
+    "module": 12,
+    "question": "In a Unix-like file system, what does a leading slash in /home/user indicate?",
+    "options": [
+      "A relative path under the current folder",
+      "A Windows-style drive letter",
+      "A network URL that always requires HTTPS",
+      "An absolute path beginning at the filesystem root"
+    ],
+    "answer": 3,
+    "explanation": "A leading slash starts at the root of the directory hierarchy. Relative paths instead depend on the current directory.",
+    "lesson": {
+      "title": "Filesystem root",
+      "meaning": "Path meaning depends on where it begins.",
+      "example": "/home/user refers to a rooted path regardless of the shell's current folder.",
+      "remember": "Leading / = absolute path from filesystem root."
+    }
+  },
+  {
+    "id": "ite8-expanded-116",
+    "module": 12,
+    "question": "Which macOS feature is commonly used for versioned backups and recovery?",
+    "options": [
+      "Disk Utility as a substitute for configured backups",
+      "Keychain Access",
+      "Time Machine",
+      "Activity Monitor"
+    ],
+    "answer": 2,
+    "explanation": "Time Machine is a macOS backup feature. Its effectiveness depends on configuration, destination availability and recoverability.",
+    "lesson": {
+      "title": "Time Machine",
+      "meaning": "A recovery feature must be set up before loss occurs.",
+      "example": "Verify a Mac's backups and available restore points before major changes.",
+      "remember": "Backup configuration and recovery verification still matter."
+    }
+  },
+  {
+    "id": "ite8-expanded-117",
+    "module": 12,
+    "question": "Why should mobile apps normally be installed from trusted, approved sources?",
+    "options": [
+      "It guarantees every app's permissions are necessary",
+      "It reduces exposure to untrusted or tampered packages",
+      "It removes the need for any further updates",
+      "It guarantees the app can never contain a vulnerability"
+    ],
+    "answer": 1,
+    "explanation": "Trusted distribution reduces risk but does not eliminate it. Review permissions and keep software updated as well.",
+    "lesson": {
+      "title": "Application sources",
+      "meaning": "App origin is one security layer among several.",
+      "example": "Avoid an unsolicited installation package and use the approved distribution path.",
+      "remember": "Trusted source, appropriate permissions and updates work together."
+    }
+  },
+  {
+    "id": "ite8-expanded-118",
+    "module": 12,
+    "question": "A mobile app no longer needs location access. What is a suitable action?",
+    "options": [
+      "Revoke that unnecessary permission in the supported settings",
+      "Keep the permission forever because it was once approved",
+      "Grant unrelated camera and microphone permissions too",
+      "Disable all device recovery options instead"
+    ],
+    "answer": 0,
+    "explanation": "Permissions should reflect current need. Access that once had a purpose can become unnecessary.",
+    "lesson": {
+      "title": "Revoking access",
+      "meaning": "Least privilege applies over time, not just at installation.",
+      "example": "Review app permissions after changing how a device is used.",
+      "remember": "Remove access that is no longer required."
+    }
+  },
+  {
+    "id": "ite8-expanded-119",
+    "module": 12,
+    "question": "Before an authorized remote wipe of a lost managed device, what consequence must be considered?",
+    "options": [
+      "It guarantees the device will be physically returned",
+      "It is equivalent to displaying the device on a map",
+      "It changes only the screen-lock timeout",
+      "It can destroy device data and must follow approval and recovery policy"
+    ],
+    "answer": 3,
+    "explanation": "Remote wipe is destructive. Use the organization's authorization, device-management and recovery procedures rather than treating it as a harmless locator action.",
+    "lesson": {
+      "title": "Remote wipe",
+      "meaning": "Locating, locking and wiping have different consequences.",
+      "example": "An authorized team verifies the target and backup requirements before executing a wipe.",
+      "remember": "Wipe can erase data; target and approval matter."
+    }
+  },
+  {
+    "id": "ite8-expanded-120",
+    "module": 12,
+    "question": "Before resetting a phone for troubleshooting, what should be verified?",
+    "options": [
+      "Assume all local app data survives every reset",
+      "Reset first and investigate account recovery afterward",
+      "Required data backup, account/recovery access and authorization",
+      "Treat a reset as a harmless display-setting change"
+    ],
+    "answer": 2,
+    "explanation": "A reset can remove local data and settings and trigger account verification requirements. Plan recovery before resetting.",
+    "lesson": {
+      "title": "Factory reset preparation",
+      "meaning": "Reset is a change with data and access consequences.",
+      "example": "Confirm important data and account recovery arrangements before following the approved reset procedure.",
+      "remember": "Protect data and recovery access before resetting."
+    }
+  },
+  {
+    "id": "ite8-expanded-121",
+    "module": 13,
+    "question": "Which malware description best fits a Trojan horse?",
+    "options": [
+      "Malware defined primarily by self-propagation across systems",
+      "Malicious software presented as something legitimate or useful",
+      "A cryptographic integrity checksum",
+      "A legitimate signed program with no malicious behavior"
+    ],
+    "answer": 1,
+    "explanation": "A Trojan relies on deceptive appearance or purpose to get executed. It need not replicate like a worm.",
+    "lesson": {
+      "title": "Trojan horse",
+      "meaning": "The disguise encourages the user to trust the program.",
+      "example": "An unofficial 'utility' installs unwanted remote access instead of doing only what it promises.",
+      "remember": "Trojan = deceptive legitimate-looking software with malicious behavior."
+    }
+  },
+  {
+    "id": "ite8-expanded-122",
+    "module": 13,
+    "question": "What distinguishes a computer worm from a simple non-replicating malicious program?",
+    "options": [
+      "It can self-propagate across systems under suitable conditions",
+      "It is defined solely by pretending to be a useful app",
+      "It cannot move between systems under any conditions",
+      "It is simply every unwanted browser setting"
+    ],
+    "answer": 0,
+    "explanation": "Worms can spread copies through available pathways or vulnerabilities. This differs from merely disguising one executable as useful.",
+    "lesson": {
+      "title": "Worm",
+      "meaning": "Propagation is the defining distinction in this question.",
+      "example": "An unpatched network service enables a worm to spread between vulnerable machines.",
+      "remember": "Worm = self-propagating malware."
+    }
+  },
+  {
+    "id": "ite8-expanded-123",
+    "module": 13,
+    "question": "A workstation is suspected of active ransomware. What is an appropriate initial organizational response?",
+    "options": [
+      "Attach all writable backup disks to the affected PC",
+      "Erase every relevant log before notifying anyone",
+      "Continue normal file sharing regardless of the incident plan",
+      "Follow the incident plan and contain/isolate the affected system as directed"
+    ],
+    "answer": 3,
+    "explanation": "Containment can limit spread and further harm. Follow the incident plan, preserve required evidence and use approved recovery processes.",
+    "lesson": {
+      "title": "Ransomware response",
+      "meaning": "Active compromise needs coordinated incident handling.",
+      "example": "Notify the responsible team and isolate network access as instructed.",
+      "remember": "Contain, report and follow the incident plan; protect recovery copies."
+    }
+  },
+  {
+    "id": "ite8-expanded-124",
+    "module": 13,
+    "question": "An unknown person follows an employee through a secured door without presenting authorization. What is this commonly called?",
+    "options": [
+      "Phishing",
+      "Shoulder surfing",
+      "Tailgating",
+      "Disk imaging"
+    ],
+    "answer": 2,
+    "explanation": "Tailgating bypasses physical access procedures by following someone else. Respond through the organization's safety and access-control process.",
+    "lesson": {
+      "title": "Tailgating",
+      "meaning": "Physical entry can undermine digital controls.",
+      "example": "An employee uses the approved visitor-verification process instead of assuming the follower is authorized.",
+      "remember": "Tailgating = unauthorized entry by following an authorized person."
+    }
+  },
+  {
+    "id": "ite8-expanded-125",
+    "module": 13,
+    "question": "Which action is an example of shoulder surfing?",
+    "options": [
+      "A deceptive email requesting credentials",
+      "Watching someone enter a password or view sensitive data",
+      "Following someone through an access-controlled door",
+      "Encrypting files for approved storage"
+    ],
+    "answer": 1,
+    "explanation": "Shoulder surfing obtains information by observation. Screens, keyboards and surroundings can expose secrets.",
+    "lesson": {
+      "title": "Shoulder surfing",
+      "meaning": "Information can leak without malware.",
+      "example": "Position a screen appropriately and avoid entering sensitive information while someone can observe it.",
+      "remember": "Shoulder surfing = observing sensitive information directly."
+    }
+  },
+  {
+    "id": "ite8-expanded-126",
+    "module": 13,
+    "question": "What should a user do before leaving an authenticated workstation unattended?",
+    "options": [
+      "Lock the session according to policy",
+      "Leave the authenticated session available to passersby",
+      "Share the password so colleagues can unlock it",
+      "Rely only on the monitor entering power-saving mode"
+    ],
+    "answer": 0,
+    "explanation": "Locking restricts casual access to an already authenticated session. It complements other controls rather than replacing them.",
+    "lesson": {
+      "title": "Unattended workstation",
+      "meaning": "A strong login is ineffective if an unlocked session is left available.",
+      "example": "Lock the workstation before stepping away even for a short period.",
+      "remember": "Authenticated does not mean safe to leave unlocked."
+    }
+  },
+  {
+    "id": "ite8-expanded-127",
+    "module": 13,
+    "question": "Which statement best distinguishes hashing from encryption?",
+    "options": [
+      "A cryptographic hash normally contains a decryptable copy of the original",
+      "Encryption is designed to be irreversible even with the correct key",
+      "Both are identical lossless compression operations",
+      "Hashing produces a digest for uses such as integrity checking; encryption is designed for recovery with the correct key"
+    ],
+    "answer": 3,
+    "explanation": "Cryptographic hashes and encryption serve different purposes. A digest can support integrity verification, while encryption protects recoverable data confidentiality.",
+    "lesson": {
+      "title": "Hashing versus encryption",
+      "meaning": "One operation summarizes data; the other transforms it for controlled recovery.",
+      "example": "Compare an official download digest to detect a mismatch rather than expecting the digest to contain a decryptable copy.",
+      "remember": "Hash = digest. Encryption = reversible with the appropriate key."
+    }
+  },
+  {
+    "id": "ite8-expanded-128",
+    "module": 13,
+    "question": "Which distinction is correct?",
+    "options": [
+      "A firewall is a replacement for every antimalware measure",
+      "Antimalware replaces all traffic-filtering policies",
+      "A firewall controls traffic by rules; antimalware tools detect or respond to malicious software",
+      "Both controls exclusively address physical theft"
+    ],
+    "answer": 2,
+    "explanation": "These controls address different parts of security. Neither substitutes for every other layer.",
+    "lesson": {
+      "title": "Firewall versus antivirus",
+      "meaning": "Layered protection uses tools with different functions.",
+      "example": "A host uses appropriate traffic rules, antimalware controls, updates and limited privileges.",
+      "remember": "Traffic control and malware detection are different roles."
+    }
+  },
+  {
+    "id": "ite8-expanded-129",
+    "module": 13,
+    "question": "Which measure directly helps prevent unauthorized physical removal of a workstation?",
+    "options": [
+      "Changing only the operating-system wallpaper",
+      "Appropriate physical access controls and securing equipment",
+      "Renaming the device on the network",
+      "Increasing the monitor's auto-off delay"
+    ],
+    "answer": 1,
+    "explanation": "Physical controls address access to and removal of equipment. Software settings alone do not prevent someone carrying away an unsecured device.",
+    "lesson": {
+      "title": "Physical security",
+      "meaning": "Protect the hardware as well as its data.",
+      "example": "Use controlled rooms or appropriate equipment locks according to policy.",
+      "remember": "Physical access is part of information security."
+    }
+  },
+  {
+    "id": "ite8-expanded-130",
+    "module": 13,
+    "question": "What is the purpose of keeping multiple backup copies on different media or locations, including an off-site copy?",
+    "options": [
+      "Reduce dependence on one device, location or failure event",
+      "Guarantee recovery without ever testing a backup",
+      "Replace every access-control requirement",
+      "Keep all copies permanently writable from the same compromised account"
+    ],
+    "answer": 0,
+    "explanation": "Diverse protected copies reduce shared failure exposure. Recovery testing and security remain necessary.",
+    "lesson": {
+      "title": "Backup diversity",
+      "meaning": "One event should not destroy the working data and every recovery copy.",
+      "example": "A site incident destroys local equipment while a protected off-site backup remains available.",
+      "remember": "Separate failure domains and test recovery."
+    }
+  },
+  {
+    "id": "ite8-expanded-131",
+    "module": 14,
+    "question": "Which opening question best invites a user to describe a problem without prematurely narrowing the cause?",
+    "options": [
+      "Your RAM is broken, right?",
+      "You must have deleted Windows, correct?",
+      "The fault is definitely the keyboard, isn't it?",
+      "What happens when you try to open the application?"
+    ],
+    "answer": 3,
+    "explanation": "An open question gathers the user's account before suggesting a diagnosis. Leading questions can distort useful information.",
+    "lesson": {
+      "title": "Open questions",
+      "meaning": "Start broad, then narrow with focused follow-up questions.",
+      "example": "Ask what happens, when it started and whether anything changed.",
+      "remember": "Open questions gather context; closed questions confirm details."
+    }
+  },
+  {
+    "id": "ite8-expanded-132",
+    "module": 14,
+    "question": "What does a support service-level agreement normally define?",
+    "options": [
+      "A guarantee that every system will be fault-free forever",
+      "A list of all customers' private credentials",
+      "Agreed service commitments such as response targets and scope",
+      "Only a hardware manufacturer's CPU socket diagram"
+    ],
+    "answer": 2,
+    "explanation": "An SLA documents agreed service expectations. It is not a promise that faults are impossible.",
+    "lesson": {
+      "title": "SLA",
+      "meaning": "Support priorities should follow agreed commitments and impact.",
+      "example": "A ticket is prioritized using the applicable response target and severity policy.",
+      "remember": "SLA = agreed service expectations, not zero risk."
+    }
+  },
+  {
+    "id": "ite8-expanded-133",
+    "module": 14,
+    "question": "Why is a chain-of-custody record important when handling potential digital evidence?",
+    "options": [
+      "Increase the storage device's physical speed",
+      "It documents who handled evidence and when, supporting traceability",
+      "Replace every evidence-integrity procedure",
+      "Permit unrecorded transfers whenever the technician is experienced"
+    ],
+    "answer": 1,
+    "explanation": "Evidence handling must preserve required integrity and traceability. Record transfers and follow the approved process.",
+    "lesson": {
+      "title": "Chain of custody",
+      "meaning": "An unexplained handover can undermine confidence in evidence handling.",
+      "example": "Log an evidence transfer with the required identifiers, time and responsible parties.",
+      "remember": "Record possession and transfers; preserve integrity under the approved process."
+    }
+  },
+  {
+    "id": "ite8-expanded-134",
+    "module": 14,
+    "question": "Before starting an authorized remote-support session on a customer's PC, what should be confirmed?",
+    "options": [
+      "The customer's consent, intended scope and approved access procedure",
+      "Assume permission for support allows access to unrelated files",
+      "Skip user identity and device checks entirely",
+      "Treat every remote session as authorized without consent"
+    ],
+    "answer": 0,
+    "explanation": "Remote access can expose user data and control. Confirm permission, identity and scope under the support procedure.",
+    "lesson": {
+      "title": "Remote support consent",
+      "meaning": "Access for support is limited to the agreed work.",
+      "example": "Explain the intended remote actions and obtain the required consent before connecting.",
+      "remember": "Confirm consent and scope; use approved remote-support tools."
+    }
+  },
+  {
+    "id": "ite8-expanded-135",
+    "module": 14,
+    "question": "What is an appropriate approach when a support task needs the user to authenticate?",
+    "options": [
+      "Store the password in a public support-ticket field",
+      "Copy it into unrelated diagnostic logs",
+      "Reuse it on a personal technician account",
+      "Have the user authenticate through the approved process without unnecessarily disclosing their password"
+    ],
+    "answer": 3,
+    "explanation": "Support should avoid unnecessary collection and exposure of secrets. Use the approved identity and authentication workflow.",
+    "lesson": {
+      "title": "Credential handling",
+      "meaning": "Solving the fault does not justify unrestricted handling of credentials.",
+      "example": "The user enters credentials privately when required by the authorized procedure.",
+      "remember": "Minimize exposure of secrets; follow the approved authentication process."
+    }
+  },
+  {
+    "id": "ite8-expanded-136",
+    "module": 14,
+    "question": "Why should a significant approved change include a rollback plan?",
+    "options": [
+      "Avoid every post-change verification step",
+      "Guarantee a backup is no longer required",
+      "To provide a defined recovery path if the change fails",
+      "Conceal the change from the affected support team"
+    ],
+    "answer": 2,
+    "explanation": "A rollback plan identifies how to return to a known acceptable state, subject to the change's capabilities and data effects.",
+    "lesson": {
+      "title": "Rollback planning",
+      "meaning": "Plan for failure before making the change.",
+      "example": "Record recovery steps and required backups before a configuration deployment.",
+      "remember": "Change plan = intended action, validation and recovery path."
+    }
+  },
+  {
+    "id": "ite8-expanded-137",
+    "module": 14,
+    "question": "A customer requests installation of software without an appropriate license. What should the technician do?",
+    "options": [
+      "Use an unapproved activation bypass",
+      "Follow licensing policy and use legitimate authorized options",
+      "Copy an unrelated customer's entitlement",
+      "Assume downloading proves permission for every use"
+    ],
+    "answer": 1,
+    "explanation": "Technical ability to install does not establish permission to use software. Follow the applicable license and organizational process.",
+    "lesson": {
+      "title": "Software licensing",
+      "meaning": "Deployment includes authorization as well as technical setup.",
+      "example": "Offer an approved licensed product or legitimate alternative.",
+      "remember": "A download is not proof of a valid license for the intended use."
+    }
+  },
+  {
+    "id": "ite8-expanded-138",
+    "module": 14,
+    "question": "Before retiring a storage device with sensitive organizational data, what is required?",
+    "options": [
+      "An approved sanitization or destruction method appropriate to the device and policy",
+      "Only delete shortcuts to the sensitive files",
+      "Only rename the stored documents",
+      "Assume emptying the recycle bin always meets sanitization requirements"
+    ],
+    "answer": 0,
+    "explanation": "Ordinary deletion does not guarantee suitable sanitization. Methods depend on the storage technology and organizational requirements.",
+    "lesson": {
+      "title": "Data sanitization",
+      "meaning": "Retiring hardware includes protecting the information it held.",
+      "example": "Use the approved verified process before reuse or disposal.",
+      "remember": "Deletion and approved sanitization are not equivalent."
+    }
+  },
+  {
+    "id": "ite8-expanded-139",
+    "module": 14,
+    "question": "A frustrated customer describes repeated failures. Which response is most professional?",
+    "options": [
+      "Dismiss the report before gathering evidence",
+      "Use technical jargon to prevent follow-up questions",
+      "Blame the customer as the initial diagnosis",
+      "Acknowledge the impact, clarify the symptoms and explain the next steps calmly"
+    ],
+    "answer": 3,
+    "explanation": "Professional support combines respectful communication with evidence-based diagnosis. Dismissing the user harms understanding and trust.",
+    "lesson": {
+      "title": "Empathy in support",
+      "meaning": "Empathy helps keep the conversation useful and focused.",
+      "example": "Confirm how the fault affects the user, then gather details and set realistic expectations.",
+      "remember": "Acknowledge impact, clarify facts and communicate next steps."
+    }
+  },
+  {
+    "id": "ite8-expanded-140",
+    "module": 14,
+    "question": "Which information best supports an escalation to another technical team?",
+    "options": [
+      "Only an unsupported conclusion with no test results",
+      "Only the message still broken",
+      "Symptoms, impact, relevant logs, tests already tried and their results",
+      "All unrelated personal files regardless of need"
+    ],
+    "answer": 2,
+    "explanation": "An effective handover gives the receiving team enough context to continue without repeating work or relying on assumptions.",
+    "lesson": {
+      "title": "Useful escalation",
+      "meaning": "Escalation transfers evidence and responsibility through the approved process.",
+      "example": "Attach relevant error details and test outcomes while minimizing unnecessary personal data.",
+      "remember": "Escalate facts, impact and attempted actions."
+    }
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "pc-parts": {
+    "path": "assets/diagrams/pc-parts.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Personal_computer%2C_exploded.svg",
+    "author": "Gustavb",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Personal_computer%2C_exploded.svg"
+  },
+  "motherboard": {
+    "path": "assets/diagrams/motherboard.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Motherboard_diagram.svg",
+    "author": "Gribeco; Moxfyre; subsequent Commons contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Motherboard_diagram.svg"
+  },
+  "raid-0": {
+    "path": "assets/diagrams/raid-0.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:RAID_0.svg",
+    "author": "Cburnett",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/RAID_0.svg"
+  },
+  "raid-1": {
+    "path": "assets/diagrams/raid-1.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:RAID_1.svg",
+    "author": "Cburnett",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/RAID_1.svg"
+  },
+  "dhcp": {
+    "path": "assets/diagrams/dhcp.png",
+    "source": "https://commons.wikimedia.org/wiki/File:DHCP_-_A_new_Address_Allocating_Sequence_Diagram_-_en.png",
+    "author": "Michel Bakni",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/DHCP_-_A_new_Address_Allocating_Sequence_Diagram_-_en.png"
+  },
+  "laser": {
+    "path": "assets/diagrams/laser.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Laser_printer_%28cutaway_diagram%29.jpg",
+    "author": "Welleman",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Laser_printer_(cutaway_diagram).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Laser_printer_%28cutaway_diagram%29.jpg"
+  }
+}

@@ -1,0 +1,2 @@
+﻿const fs=require('fs'),vm=require('vm');
+let s=fs.readFileSync('index.html','utf8');let blocks=[...s.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(x=>x[1]);const ctx={window:{addEventListener(){}}}; vm.runInNewContext(blocks.find(x=>x.includes('window.ITE_QUESTIONS =')),ctx); fs.writeFileSync('tmp/notes/questions.json',JSON.stringify(ctx.window.ITE_QUESTIONS));console.log(ctx.window.ITE_QUESTIONS.length);console.log(ctx.window.ITE_QUESTIONS.slice(130,139).map(q=>({id:q.id,question:q.question,answer:q.options[q.answer]})));

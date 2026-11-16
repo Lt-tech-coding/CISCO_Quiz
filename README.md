@@ -1,4 +1,4 @@
-﻿# CISCO_Quiz
+# CISCO_Quiz
 
 A self-contained Cisco IT Essentials 8 study app by StealthxMedia.
 
@@ -22,3 +22,12 @@ This independent study tool is not affiliated with Cisco. Scores describe practi
 Copyright 2026 [stealthxmedia.com](https://stealthxmedia.com).
 
 See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for diagram credits. No license is granted here for third-party material beyond its applicable license.
+
+
+## Project folders
+
+- `index.html`: complete deployable quiz; all runtime images and content are embedded.
+- `assets/`: original InvoiceLite artwork, downloaded diagrams and image credits.
+- `tmp/notes/`: question data, extracted chapter text, authoring helpers and verification scripts retained from development.
+
+The scripts in `tmp/notes/` are development history, not a single build pipeline. Some depend on local note files or tools from the original development machine. The website itself only needs `index.html`; do not run all the edit scripts to deploy it.

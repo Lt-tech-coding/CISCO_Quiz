@@ -1,0 +1,140 @@
+1|Only the processor's brand and physical dimensions|Only the CPU's advertised clock speed|Only that the power supply has spare connectors
+2|System RAM used for all active applications|Nonvolatile SSD storage used for saved files|Virtual memory pages stored on a drive
+3|Encrypt all stored files automatically|Replace the need for redundant storage|Make unsupported RAM work in any motherboard
+4|All USB-C ports must support identical optional features|A cable adapter always adds missing display support|The operating system alone guarantees video capability
+5|A DIMM slot with enough physical clearance|A SATA connector configured in firmware|The CPU socket used for processor installation
+6|The modules differ only in advertised speed|The operating system can adapt the slot electrically|The notch can be removed without affecting compatibility
+7|Always the two slots closest to the CPU on every board|Always two adjacent slots regardless of channel labels|Any two slots necessarily enable the intended mode
+8|Only the graphics card's slot length|Only the PSU's maximum advertised wattage, ignoring connectors|Only the old PSU's age
+9|Nonvolatile storage of user files|A logical partition table|A controller for storage commands
+10|Only in volatile RAM refreshed while powered|Only on the operating-system partition|Only in the battery itself
+11|Increase pressure until the retention bracket closes|Rotate the processor according to its printed brand text only|Treat every CPU from that vendor as socket-compatible
+12|Leave the film to prevent electrical contact|Compensate for the film with extra thermal paste|Increase fan speed instead of removing the film
+13|After the motherboard is fully secured over it|After all rear cables are attached|Only after the operating system is installed
+14|The storage drive's partition scheme|The monitor's selected video input|The operating system's startup-app list
+15|Assume the PCIe slot always supplies all required power|Use any visually similar CPU connector without checking|Use an unapproved adapter regardless of PSU capability
+16|Leave it if the computer passes one startup test|Power on first to see whether a short occurs|Assume a screw cannot contact exposed conductors
+17|Extra force improves the board's electrical grounding indefinitely|Screw pressure sets the CPU's operating frequency|The board must bend slightly to ensure connector seating
+18|Reuse old modular cables whenever the shells fit|Mix cables according to the number of pins only|Assume all PSU-side wiring is standardized across models
+19|The front-panel power-switch pins|The clear-CMOS jumper|An unverified header chosen only because it has the same pin count
+20|Apply power before checking for loose screws|Assume seated connectors need no inspection|Install the operating system before verifying cooler mounting
+21|The installed OS's startup-app order|The storage volume's display name|The browser's default download location
+22|Use a similar board's firmware if the version number is higher|Perform the update without checking power stability|Assume the newest file is compatible with every board revision
+23|Provide additional general-purpose RAM|Supply temporary power during an outage|Replace the need to manage encryption recovery keys
+24|The VM's desktop background settings|The printer-sharing settings|The guest's file-system volume label
+25|Every disk contains a complete independent copy|The array has no redundant information|Striping alone recreates missing data with no parity
+26|Two, because one mirrored pair also supplies the required striped pairs|Three, because RAID 10 is identical to RAID 5|One, because virtual volumes do not need physical drives
+27|A basic surge-only power strip|A passive outlet adapter with no battery|An external PSU extension cable
+28|Surge protection always replaces the computer's PSU|It automatically creates an orderly OS shutdown|It converts every outage into a harmless voltage spike
+29|Setup passwords and disk encryption always protect identical data|Any firmware password encrypts all removable storage|Disk encryption only changes firmware-menu access
+30|A procedure for any board using the same CPU brand|A generic instruction to short pins while powered|An OS installation guide that ignores firmware recovery
+31|It guarantees that the first proposed cause is correct|It eliminates the need for final verification|It makes documentation unnecessary
+32|The DNS service is proven to be the only possible fault|The entire network is proven healthy in every respect|The CPU is proven defective by the restored link
+33|Only the current desktop appearance|Only the installed application's icon name|Only the replacement part's purchase price
+34|Run a destructive reformat before considering the data|Perform repeated write-intensive tests regardless of the fault|Assume a drive that still mounts needs no recovery planning
+35|Use household cleaning chemicals on exposed powered circuitry|Use any vacuum without considering ESD or device instructions|Choose the strongest air pressure regardless of the device
+36|Force the blades to maximum speed using the air stream|Hold the fan by bending a blade|Ignore the manufacturer's handling precautions
+37|Reinstall Windows before checking incoming power|Replace the motherboard before checking the outlet|Reset application preferences before verifying PSU input
+38|The user's unrelated email configuration|The monitor's display color profile|The printer's selected paper size
+39|Assume every random crash proves a failed RAM module|Reinstall the OS without testing the suspected memory|Replace the display cable as a definitive RAM test
+40|Continue powered stress testing to reproduce more damage|Open the connected PSU to inspect its internals|Keep using the system if an application still responds
+41|UDP|ARP|ICMP
+42|It guarantees ordered delivery and retransmits every lost datagram|It inherently encrypts all application data|It uses TCP's mandatory connection establishment
+43|80|22|3389
+44|Telnet|FTP control|RDP
+45|67|443|25
+46|Server 68 and client 67|Server 53 and client 53|Server 80 and client 443
+47|Only the source IP subnet mask|The destination application's user account|Only the configured DNS server address
+48|Route all networks regardless of its configured function|Assign every client's address without any DHCP service|Replace the wired network's switching function in every design
+49|Fiber always eliminates distance limitations|Any fiber connector works with every transceiver|Fiber automatically supplies PoE to attached devices
+50|64|126|254
+51|192.168.11.20|192.168.20.10|192.168.0.20
+52|255.255.255.0|255.255.255.128|255.255.255.252
+53|192.168.10.0|192.168.10.1|192.168.11.255
+54|ipconfig /renew|tracert|netstat -an
+55|nslookup|ipconfig /all|arp -a
+56|169.254.1.1|192.168.1.1|255.255.255.255
+57|ipconfig /flushdns|ipconfig /displaydns|nslookup
+58|Replace the CPU before examining DNS|Treat a successful IP test as proof that name resolution works|Change printer drivers before testing the hostname lookup
+59|Resolve every domain name without DNS|Provide guaranteed end-to-end encryption|Replace all firewall rules with authentication
+60|A guarantee of the AP operator's identity|A mandatory secret that cannot be copied|Proof that strong wireless encryption is enabled
+61|Replace the adapter before checking whether radios are disabled|Reinstall the OS before checking wireless settings|Change the network's DNS record before checking the local radio
+62|Replace the entire display before inspecting brightness settings|Repartition the system drive before checking the control|Treat it immediately as a proven GPU failure
+63|Dispose of it in general waste regardless of local procedures|Puncture it to remove stored charge before recycling|Burn it to prevent data recovery
+64|It retains the session only in continually powered RAM|It is the same as an ordinary restart with no saved state|It always keeps every component fully powered
+65|Only verify that the replacement has a similar label|Replace first and consider data recovery afterward|Assume replacing the drive retains the old installed OS automatically
+66|Pull on the antenna wires instead of the connectors|Choose the lead positions randomly|Treat every internal antenna connector as mechanically identical
+67|Replace the touchpad before examining its enable state|Repartition storage to restore pointer input|Replace all RAM because an external mouse works
+68|All models use an identical disassembly order|Physical resemblance guarantees identical replacement parts|A model manual removes the need for ESD precautions
+69|Assume every fitting USB-C charger supplies enough power|Assume any USB-C cable supports every charging capability|Change the OS theme to enable higher adapter wattage
+70|Only the connector's external dimensions|Only the adapter's brand name|Only whether the adapter can turn on its indicator light
+71|Collation|Color calibration|Print spooling
+72|Bond toner to the printed sheet|Sort completed printed pages into sets|Convert digital jobs into a spool queue
+73|The entire network path is proven healthy|The printer's mechanical output is proven impossible|All printer drivers on all clients are proven correct
+74|The display driver, before examining the printer driver|The printer's paper size as the only possible cause|The CPU's thermal interface as the primary print-language setting
+75|The monitor's active display input|The computer's CPU power connector|The printer's cosmetic panel color
+76|Apply lubricant to the paper sheets|Compensate by changing the IP subnet mask|Assume all media types and humidity conditions feed identically
+77|Thermal-transfer printing that requires a ribbon|Dot-matrix impact printing with an inked ribbon|Inkjet printing with liquid ink cartridges
+78|The scanner's physical page-feed capacity|The printer's available toner quantity|The network's permitted host count
+79|Replace every printer's physical imaging mechanism|Act as an independent substitute for paper and toner|Make every client use the same display driver
+80|The fuser bonds toner to paper before an image is formed|The finished page is only placed in the output tray|The paper is scanned into a digital document
+81|SaaS providing only a finished application|IaaS requiring the customer to manage the guest OS|A local hypervisor with no managed platform service
+82|All customer data must be accessible without authentication|The infrastructure must serve exactly one organization exclusively|Public cloud cannot enforce customer-specific access policies
+83|Resources necessarily offered to all customers without restriction|Any desktop with a hidden folder|An internet connection that does not use a password
+84|Two unconnected USB backup drives|A single desktop running two browser tabs|A switch connected to two identical patch cables
+85|All provider resources remain permanently fixed despite demand|Every workload has unlimited free capacity|Adding users automatically eliminates resource limits
+86|Every guest automatically receives unlimited physical RAM|Virtual RAM allocations eliminate host memory limits|The storage subsystem permanently becomes main memory
+87|A bare-metal hypervisor booted directly on physical hardware|Firmware POST with no guest-management layer|A normal application with no virtualization functions
+88|Disconnected adapter mode|Internal-only networking with no external bridge|A host-only adapter with no routing to the LAN
+89|A disconnected virtual adapter|A guest with only an isolated internal network and no router|A disk snapshot without a network interface
+90|Bridged networking onto the external LAN|A guest adapter disconnected from every network|A standard externally bridged virtual NIC by definition
+91|All 8 GB automatically becomes CPU cache|A 32-bit application guarantees the whole OS can use all RAM|Memory-generation compatibility becomes irrelevant above 4 GB
+92|Any driver with the same product name is compatible|Every 32-bit kernel driver works unchanged on a 64-bit OS|The device's physical connection removes all architecture requirements
+93|Back up user files as part of every activation|Automatically test all hardware and device drivers|Create a recovery copy of the previous OS
+94|FAT32 used as a replacement partition table|MBR regardless of its applicable size limits|NTFS used as the firmware boot mode
+95|Store only ordinary user documents|Hold the currently running CPU cache|Replace the need for the OS's bootloader files
+96|Delete every partition because setup lists it|Choose a disk only by its reported size|Assume small partitions can never contain critical boot files
+97|It always removes all previous applications by definition|It eliminates the need for compatibility checks|It is identical to deleting all partitions and starting fresh
+98|An unsolicited attachment claiming to update all drivers|A package chosen only because its filename matches|An unverified mirror requiring permanent security disabling
+99|Assume one successful boot proves every device works|Skip required security configuration until a failure occurs|Treat installation completion as a substitute for functional testing
+100|Only confirm that the installer window closed|Only check that a desktop shortcut exists|Assume driver setup proves the required remote service is reachable
+101|Task Manager's live CPU graph|Disk Management's partition list|Device Manager's hardware tree
+102|Task Manager's process list as a substitute for every service setting|Disk Management|The default-program selection panel
+103|It permanently repairs every faulty disk|It bypasses the need to verify the affected application|It proves every disabled service is malicious
+104|Device Manager's driver tab|Event Viewer's event list|Task Manager's startup list
+105|Validate only protected Windows operating-system file contents|Identify router hops to an internet server|Query DNS server records
+106|Physical motherboard socket pins|Printer roller alignment|RAM module notch placement
+107|It supplies the user's authentication password|It identifies a physical network port|It proves a process is safe to terminate without checking
+108|Format all data volumes before assessing the recent change|Keep the failing driver without testing because newer is always better|Replace unrelated network equipment immediately
+109|Grant Full Control because Read is always insufficient|Give local administrator rights for every document|Disable permissions entirely for the containing drive
+110|Disable the firewall on every profile indefinitely|Allow all inbound ports from all sources|Remove the service's authentication requirement
+111|cd|ls|whoami
+112|ls|pwd|mkdir
+113|Change the file's owner and group by definition|List active IP connections|Alter the contents of every matching file
+114|mkdir|chown|pwd
+115|A relative path under the current folder|A Windows-style drive letter|A network URL that always requires HTTPS
+116|Disk Utility as a substitute for configured backups|Keychain Access|Activity Monitor
+117|It guarantees every app's permissions are necessary|It removes the need for any further updates|It guarantees the app can never contain a vulnerability
+118|Keep the permission forever because it was once approved|Grant unrelated camera and microphone permissions too|Disable all device recovery options instead
+119|It guarantees the device will be physically returned|It is equivalent to displaying the device on a map|It changes only the screen-lock timeout
+120|Assume all local app data survives every reset|Reset first and investigate account recovery afterward|Treat a reset as a harmless display-setting change
+121|Malware defined primarily by self-propagation across systems|A cryptographic integrity checksum|A legitimate signed program with no malicious behavior
+122|It is defined solely by pretending to be a useful app|It cannot move between systems under any conditions|It is simply every unwanted browser setting
+123|Attach all writable backup disks to the affected PC|Erase every relevant log before notifying anyone|Continue normal file sharing regardless of the incident plan
+124|Phishing|Shoulder surfing|Disk imaging
+125|A deceptive email requesting credentials|Following someone through an access-controlled door|Encrypting files for approved storage
+126|Leave the authenticated session available to passersby|Share the password so colleagues can unlock it|Rely only on the monitor entering power-saving mode
+127|A cryptographic hash normally contains a decryptable copy of the original|Encryption is designed to be irreversible even with the correct key|Both are identical lossless compression operations
+128|A firewall is a replacement for every antimalware measure|Antimalware replaces all traffic-filtering policies|Both controls exclusively address physical theft
+129|Changing only the operating-system wallpaper|Renaming the device on the network|Increasing the monitor's auto-off delay
+130|Guarantee recovery without ever testing a backup|Replace every access-control requirement|Keep all copies permanently writable from the same compromised account
+131|Your RAM is broken, right?|You must have deleted Windows, correct?|The fault is definitely the keyboard, isn't it?
+132|A guarantee that every system will be fault-free forever|A list of all customers' private credentials|Only a hardware manufacturer's CPU socket diagram
+133|Increase the storage device's physical speed|Replace every evidence-integrity procedure|Permit unrecorded transfers whenever the technician is experienced
+134|Assume permission for support allows access to unrelated files|Skip user identity and device checks entirely|Treat every remote session as authorized without consent
+135|Store the password in a public support-ticket field|Copy it into unrelated diagnostic logs|Reuse it on a personal technician account
+136|Avoid every post-change verification step|Guarantee a backup is no longer required|Conceal the change from the affected support team
+137|Use an unapproved activation bypass|Copy an unrelated customer's entitlement|Assume downloading proves permission for every use
+138|Only delete shortcuts to the sensitive files|Only rename the stored documents|Assume emptying the recycle bin always meets sanitization requirements
+139|Dismiss the report before gathering evidence|Use technical jargon to prevent follow-up questions|Blame the customer as the initial diagnosis
+140|Only an unsupported conclusion with no test results|Only the message still broken|All unrelated personal files regardless of need
